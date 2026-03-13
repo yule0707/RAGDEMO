@@ -1,0 +1,934 @@
+Leo Huovinen
+
+Chattibottien tukemat
+kyberhyökkäykset
+
+Metropolia Ammattikorkeakoulu
+Insinööri (AMK)
+Tieto- ja viestintätekniikka
+Insinöörityö
+21.5.2023
+
+Tiivistelmä
+Tekijä:
+Otsikko:
+Sivumäärä:
+Aika:
+
+Leo Huovinen
+Chattibottien tukemat kyberhyökkäykset
+32 sivua
+21.5.2023
+
+Tutkinto:
+Tutkinto-ohjelma:
+Ammatillinen pääaine:
+Ohjaajat:
+
+Insinööri (AMK)
+Tieto- ja viestintätekniikan insinööri
+Ohjelmistotuotanto
+Lehtori Ilpo Kuivanen
+
+Keskityin insinöörityössäni ChatGPT:hen ja siihen, miten sitä voisi hyödyntää osana
+kyberhyökkäyksiä. ChatGPT julkaistiin vuoden 2022 lopussa ja sen jälkeen se on
+saanut mediassa suurta huomiota. ChatGPT:n kyky tuottaa ihmismäistä tekstiä ja
+vastaamaan vakuuttavasti käyttäjän asettamiin kysymyksiin aiheesta kuin aiheesta
+sai minut kiinnostumaan, voisiko näin edistyksellistä tekniikkaa hyödyntää kyberhyökkäyksien teossa. Insinöörityölläni ei ollut erillistä tilaajaa, vaan lähdin toteuttamaan
+sitä puhtaasti omasta mielenkiinnosta.
+Insinöörityössäni käyn läpi ChatGPT:n pohjaa, jonka päälle se on rakennettu, kehitysprosessia ja sen toimintaa. Kun ChatGPT:n toiminta ja kyvyt on tullut tutuksi, niin
+siirrytään ChatGPT:n hyödyntämiseen kyberhyökkäyksissä. Avaan kyberhyökkäysosiossa asioita kuten ChatGPT:n käyttämistä osana kalasteluviestien ja haittaohjelmien tekoa. Lopuksi käyn läpi lyhyesti keinoja, miten suojaudutaan hyökkäyksiltä, ja pohditaan aiheuttaako ChatGPT tulevaisuudessa uhkaa kyberturvallisuudelle.
+Päätarkoituksena insinöörityössäni oli kasvattaa ymmärrystä chattiboteista kuten
+ChatGPT:stä ja selvittää minkälaisissa kyberhyökkäyksissä chattibotteja on mahdollista käyttää.
+Avainsanat:
+ChatGPT, kyberhyökkäys, kalastelu, LLM
+__________________________________________________________
+Tämän opinnäytetyön alkuperä on tarkastettu Turnitin Originality Check -ohjelmalla.
+
+Abstract
+Author:
+Title:
+Number of Pages:
+Date:
+
+Leo Huovinen
+Cyberattacks Supported by Chatbots
+32 pages
+21 May 2023
+
+Degree:
+Degree Programme:
+Professional Major:
+Supervisors:
+
+Bachelor of Engineering
+Information and Communication Technology
+Software Engineering
+Ilpo Kuivanen, Senior Lecturer
+
+The thesis focuses on ChatGPT and how it could be utilized as a part of cyberattacks. ChatGPT was released at the end of 2022 and has since received a lot of media attention for its ability to generate human-like text and convincingly answer questions on any topic. The question here is whether such advanced technology could be
+used in cyberattacks.
+The thesis covers the foundation of ChatGPT, its development process, and its functioning. Furthermore, the thesis explores the use of ChatGPT in part of cyberattacks
+discussing e.g. using ChatGPT in writing phishing messages and malware creation.
+Finally, the thesis briefly reviews ways to protect oneself from attacks and whether
+ChatGPT poses a threat to cybersecurity in the future.
+Keywords:
+
+ChatGPT, cyberattacks, phishing, LLM
+
+Sisällys
+Lyhenteet
+1
+
+Johdanto
+
+1
+
+2
+
+LLM ja ChatGPT
+
+2
+
+2.1 Laajat kielimallit
+
+2
+
+2.2 GPT
+
+5
+
+3
+
+2.2.1 ChatGPT
+
+5
+
+2.2.2 ChatGPT:n käyttäminen
+
+10
+
+2.2.3 ChatGPT:n vahvuudet ja heikkoudet
+
+11
+
+Kyberhyökkäykset
+
+12
+
+3.1 Chattibottien käyttö kyberhyökkäyksissä
+
+12
+
+3.2 Kalastelu
+
+14
+
+3.3 Haittaohjelmien kirjoittaminen
+
+15
+
+3.4 Valheelliset ChatGPT:t
+
+19
+
+Suojautuminen
+
+23
+
+4.1 ChatGPT:n käytön sääntely ja asetukset
+
+23
+
+4.2 Suojautuminen kalastelulta
+
+23
+
+4.3 Haittaohjelmilta suojautuminen
+
+24
+
+5
+
+Tulevaisuuden uhkakuvat
+
+25
+
+6
+
+Yhteenveto
+
+27
+
+4
+
+Lähteet
+
+29
+
+Lyhenteet ja käsitteet
+RLHF:
+
+Reinforcement Learning from Human Feedback. ChatGPT:n koulutustapa tuottamaan parempia vastauksia, jossa hyödynnetään ihmisten antamaa palautetta.
+
+LLM:
+
+Large Language model. Suomennettuna laaja kielimalli. LLM:ää käytetään yleensä ratkaisemaan ongelmia kuten mikä voisi olla seuraava sana lauseen jatkoksi.
+
+SFT:
+
+Supervised Fine-Tuning. Tapa, jolla kielimallia ohjatusti opetetaan
+vastaamaan kysymyksiin halutulla tavalla.
+
+PPO:
+
+Proximal Policy Optimization. PPO on OpenAI:n julkaisema vahvistusoppimisen algoritmi, jota OpenAI käyttää sen helppouden ja hyvän suorituskyvyn takia.
+
+GPT:
+
+Generative Pre-trained Transformer. GPT on tekoälypohjainen kielimalli, joka käyttää syväoppimistekniikoita tuottaakseen ihmismäistä
+tekstiä. GPT-mallit on kehittänyt OpenAI.
+
+ChatGPT: OpenAI:n julkaisema chattibotti, joka pystyy vastaamaan käyttäjän
+antamaan syötteisiin.
+Prompt Engineering: Suomennettuna kehotteen suunnittelu on tapa hienosäätää
+kehotetta niin, että tekoälyyn pohjautuvista teknologioista saa parhaimman mahdollisen vastauksen.
+DAN:
+
+Do Anything Now. Yleensä sarja kehotteita, joilla voi esimerkiksi ohittaa ChatGPT:n asettamat rajoitukset sisällön tuottamisessa.
+
+CDR:
+
+Content Disarm and Reconstruction. CDR on metodi, jolla voidaan
+purkaa haitallinen osa tiedostoista ja rakentaa se uudelleen toimivaksi.
+
+1
+
+1 Johdanto
+Koko ajan kasvava laskentateho on mahdollistanut laajoihin kielimalleihin perustuvien chattibottien tulon markkinoille. Suuret yritykset kilpailevat isoilla rahoilla siitä, kuka saa vakiinnutettua paikkansa chattibottien johtajana. Laajojen
+ihmismassojen käyttöön teknologia on hyvin uusi ja eikä ole vielä täysin selvillä
+mihin kaikkeen chattibotit kykenevät nyt ja tulevaisuudessa. Julkisuudessa on
+paljon keskusteltu siitä, miten chattibotit saattavat uudistaa työmaailman ja miten monet saattavat menettää työpaikkansa chattibottien takia. Tämä keskustelu on ollut hyvin voimakasta sen takia, koska ChatGPT:n tyyppiset chattibotit
+tuottavat tekstiä, jota on vaikeaa erottaa oikean ihmisen tuottamasta tekstistä.
+Tämä herätti mielenkiintoni aiheeseen, sillä noin edistyksellistä tekniikkaa saatetaan pystyä hyödyntämään kyberhyökkäyksien tekoa varten.
+Chattibotteja on markkinoilla monenlaisia, mutta insinöörityössäni keskitytään
+LLM:ään (Large Language Model) eli suomennettuna laajoihin kielimalleihin
+pohjautuviin chattibotteihin kuten ChatGPT:hen. ChatGPT valikoitui chattiboteista erityisesti tarkasteltavaksi, koska se on saanut eniten huomiota mediassa,
+ja se on käytännössä kaikkien ihmisten käytettävissä. Näitä edistyksellisiä teknologioita pystyvät rikolliset luultavasti käyttämään tulevaisuudessa monen
+tyyppiseen kyberhyökkäykseen, mutta insinöörityössäni keskitytään pääasiallisesti jo nyt tunnettuihin hyökkäysmahdollisuuksiin kuten kalasteluviestien tekoon ja haittaohjelmien kirjoittamiseen.
+Kirjoitan aiheesta omasta mielenkiinnostani eli tällä työllä ei ole toimeksiantajaa.
+Insinöörityöni tarkoituksena on nostaa esille chattibottien tuomat mahdolliset uhkat ja väärinkäytön mahdollisuudet sekä myös kasvattaa ihmisten tietoisuutta
+chattiboteista turvallisuuden kannalta. Tutustun aiheeseen lukemalla verkkoaineistoja ja kokeilemalla chattibottia.
+
+2
+
+2 LLM ja ChatGPT
+Tässä osassa tutustutaan tarkemmin laajoihin kielimalleihin ja syvennytään niiden toimintaan. Lisäksi käydään läpi laajoihin kielimalleihin pohjautuvan ChatGPT:n toimintaa ja siihen, miten sitä on koulutettu tuottamaan ihmisen kaltaista
+tekstiä.
+
+2.1 Laajat kielimallit
+Laajat kielimallit ovat koneoppimismalleja, jotka käyttävät syväoppimisalgoritmeja ymmärtääkseen ja prosessoidakseen luonnollista kieltä. Laajat kielimallit
+voivat suorittaa monenlaisia tehtäviä kuten kääntää kieltä, analysoida lauseita ja
+käydä keskustelua chattibotin roolissa. Laajoja kielimalleja koulutetaan valtavilla
+määrillä dataa, ja datan määrä on vain koko ajan kasvamassa. Käytännössä nykyään kielimallit voidaan kouluttaa melkein kaikella, mikä on kirjoitettu internetiin
+pitkällä aikavälillä. Tämä koulutus mahdollistaa sen, että laajat kielimallit voivat
+ymmärtää monimutkaista tekstidataa, havaita kokonaisuuksia sekä sanojen välisiä suhteita ja myös tuottaa kieliopin mukaista tekstiä. Tämän toiminnan mahdollistaa moni eri tekijä, mutta toiminnan peruspalikat voidaan jakaa viiteen tärkeään osaan. Kuvassa yksi on kuvattu osat, joilla laajat kielimallit on rakennettu
+ymmärtämään ja prosessoimaan luonnollista kieltä. (1; 2.)
+
+3
+
+Kuva 1. Laajojen kielimallien peruspalikat. (3.)
+
+Mitä kuvassa yksi olevat käsitteet tarkoittavat? Aloitetaan ylimmästä pallosta,
+jossa on termi tokenization. Kielimallit eivät ole itsestään viisaita, vaan niitä täytyy kouluttaa ymmärtämään luonnollista kieltä. Malli pystyy ymmärtämään tekstipätkää paremmin, kun se muutetaan erillisiksi sanoiksi, osamerkkijonoiksi tai
+merkeiksi. Tätä muutosprosessia kutsutaan nimellä Tokenization. Tokenization
+tehdään yleensä käyttäen hyödyksi osamerkkijono algoritmeja, jotka helpottavat
+tekstin jakamista pienempiin yksiköihin. Tätä tapaa käyttäen mallin sanavarasto
+ei kasva turhan suureksi, ja samalla malli pystyy vielä tuottamaan monipuolista
+tekstiä. (1.)
+Upotukset eli embeddings ovat sanoja esittäviä jatkuvia vektoreita, joiden avulla
+pystytään mittaamaan, kuinka läheisesti sanat liittyvät toisiinsa. Upotuksien
+avulla malli voi muuntaa käsitteellisesti samankaltaiset sanat neuroverkkojen
+ymmärtämään vektori muotoon. Sanoista luodut vektorit asetetaan moniulotteiseen tilaan, jossa pystyy matemaattisesti mitata vektorien etäisyyden toisistaan.
+Vektorien pitkä välimatka toisistaan kertoo sen, ettei sanat liity juurikaan toisiinsa ja lyhyt välimatka sen, että sanat ovat läheisesti toisiinsa liittyviä. Kun
+
+4
+laajat kielimallit ovat oppineet upotukset niin mallien tuottamat vektoriesitykset
+pystyvät myös ymmärtämään monimutkaisia luonnollisessa kielessä olevia
+haasteita kuten analogioita sekä synonyymejä. (1.)
+Mallien toiminnan kannalta on tärkeää, että malli jättää tekstin vähemmän tärkeät yksityiskodat huomiotta ja keskittyy vain tärkeimpiin kohtiin. Tämän toteutuksessa käytetään hyödyksi attention eli huomiointi mekanismeja, jotka antavat
+mallille kyvyn verrata sanojen tärkeyttä suhteessa toisiinsa. Tämä kyky keskittyä valikoidusti tiettyihin kohtiin tekstissä onnistuu antamalla syötteessä tokeneille eli merkeille eri painoarvoja. Keskittymisen painottuminen vain osaan
+tekstistä on erittäin merkityksellistä, kun yritetään huomioida esimerkiksi edellisissä lauseissa olevien sanojen riippuvuuksia suhteessa tulevaan uuteen sanaan ja parantaessa mallin ymmärrystä luonnollisen kielen pienistä yksityiskohdista. (1.)
+Seuraavaksi vuorossa on kuvassa yksi oleva pallo, jossa on termi pretraining eli
+esikoulutus. Kuten aikaisemmin mainitsin, niin laajat kielimallit koulutetaan käsittämättömän suurella määrällä dataa. Esimerkiksi OpenAI:n GPT-3-malli on
+koulutettu noin 570 GB:n kokoisella koulutusdatalla. Esikoulutuksen tarkoituksena on opettaa mallille sanojen välisiä suhteita, tavallisia kielikaavoja ja muita
+tärkeitä kieleen liittyviä oppeja. Esikoulutuksen voi toteuttaa ohjattuna, ohjaamattomana tai itseohjattuna. Esikoulutus on nimensä mukaisesti vain pohjatyö,
+jotta mallin voi myöhemmin hienosäätää tiettyä tarkoitusta varten pienemmällä
+tehtävään tarkoitetulla koulutusdatalla. (1; 4.)
+Kun mallin esikoulutus on suoritettu, niin seuraavaksi mallin koulutuksessa oppima tieto siirretään uuden tehtävän hoitamista varten ja tätä kutsutaan nimellä
+transfer learning eli suomennettuna siirto-oppi. Siirto-oppia käytetään, koska se
+vähentää tarvetta merkatuille koulutusdatoille, kun malli pystyy hyödyntämään
+jo oppimaansa laajaa yleiskielitaitoa. Siirto-oppi toteutetaan yleensä hienosäätämällä esikoulutettua mallia pienemmällä uuteen tehtävään sopivalla datalla,
+jonka asiantuntijat ovat laatineet, jotta malli saavuttaisi korkean kyvykkyyden
+sille tarkoitetussa tehtävässä. (1.)
+
+5
+
+2.2 GPT
+GPT eli generative pre-trained transformer kuuluu laajojen kielimallien sukuun.
+GPT-mallit ovat keinotekoisia neuroverkkoja, jotka pohjautuvat transformer arkkitehtuuriin. Ne käyttävät syväoppimista tuottaakseen ihmismäistä tekstiä mallille annetun tekstipohjaisen syötteen perusteella. GPT-mallit koulutetaan valtavalla määrällä dataa, jota kerätään usein internetistä. Yritys nimeltä OpenAI julkaisi ensimmäisen GPT-mallin vuonna 2018, josta kehitys lähti liikkeelle. Heti
+seuraavana vuonna he julkaisivat GPT-2 ja vuonna 2020 GPT-3. Vuonna 2022
+he julkaisivat InstructGPT:n ja ChatGPT:n, johon työssäni keskitytään. Vuonna
+2023 on julkaistu viimeisin malli GPT-4, joka on ChatGPT:tä parempi esimerkiksi vaikeiden pulmien ratkaisemisessa. Alkuun kehityksessä tärkeimpänä tekijänä oli laskennallisen tehon kasvaminen, jolloin uusia malleja pystyttiin kouluttamaan huomattavasti suuremmilla määrillä dataa. Tämä antoi malleille laajemman tietopohjan ja mahdollisuuden suoriutua monipuolisemmista tehtävistä.
+Esimerkiksi GPT-2 koulutettiin 40 GB:n kokoisella tekstidatalla, kun taas GPT-3
+koulutettiin 570 GB:n kokoisella tekstidatalla, joka on huomattavan suuri ero.
+Laskennallisen tehon kasvamisen jälkeen suurin edistysaskel on ollut ihmisten
+antaman palautteen liittäminen malleihin. (4; 5.)
+
+2.2.1 ChatGPT
+Aikaisemmissa luvuissa on tutustuttu teknologioihin ja tapoihin, joiden avulla
+ChatGPT:n pohja on rakennettu. ChatGPT on siis tekoälypohjainen kielimalli,
+joka ymmärtää ja tuottaa luonnollista kielitä. Tällä hetkellä ChatGPT pystyy vastaamaan käyttäjän esittämään syötteeseen kymmenillä eri kielellä mukaan lukien myös suomen kielen. ChatGPT:n toiminta eroaa perinteisistä hakukoneista
+niin, että se ei hae sivustoja, joista käyttöjä haluaisi etsiä tietoa, vaan se luo
+oman vastauksensa. ChatGPT:ssä on myös tavallista ihmisten välistä keskustelua muistuttava ominaisuus, jossa käyttäjä pystyy vastauksen saatuaan tarkentamaan omaa kysymystään ja botti pystyy jatkamaan edellistä vastaustaan tai
+luomaan kokonaan uuden vastauksen.
+
+6
+ChatGPT-kehitysprosessia ei ole vielä yksityiskohtaisesti julkaistu, mutta sen
+toiminta on kehitetty samalta pohjalta kuin InstructGPT:n. ChatGPT:n kehittäjä
+yritys OpenAI kuvailee niitä sisaruksiksi ja kertoo tehneensä koulutusprosessissa pieniä muutoksia vain datankeräysasetuksissa. Tämä mielessä pitäen
+seuraavaksi selitetään InstructGPT:n koulutusprosessin pohjalta, miten ChatGPT on saatu vastaamaan niin hyvin käyttäjän luomiin kyselyihin. RLHF (Reinforcement Learning from Human Feedback) eli suomennettuna tuettu oppiminen ihmisen palautteesta on se tekijä, joka on mahdollistanut mallin vastauksien
+mukailemaan käyttäjän toivomuksia. RLHF koostuu käytännössä kolmesta eri
+kohdasta, jotka käydään läpi seuraavaksi (4; 6).
+Ensimmäisenä on SFT eli Supervised Fine Tuning -malli. Malli pohjautuu aikaisempaan GPT-3-malliin, mutta se hienosäädettiin omaan tarkoitukseensa asiantuntijoiden luoman koulutusdatan avulla. Koulutusdatassa jokaisella kehotteella on oma tiedetty vastaus, jonka avulla malli pystyy oppimaan oikeanlaiset
+tavat vastata syötteisiin. Kehotteet tai syötteet kerättiin oikeilta käyttäjiltä, johon
+sitten asiantuntijat laativat sopivia vastauksia. Kuvassa kaksi havainnollistetaan,
+miten SFT-mallin koulutusprosessi etenee. Prosessi alkaa kehotteiden keräämisestä ja vastauksien laatimisesta kehotteisiin, jonka jälkeen tätä luotua dataa
+voidaan hyödyntää mallin hienosäätämisessä. (4; 7, s. 8; 8.)
+
+7
+
+Kuva 2. SFT-prosessi kuvattuna. Kuvassa vasemmassa laidassa on mustalla
+tekstillä OpenAI:n itse tekemät kuvaukset prosessista. Oikeassa laidassa punaisella tekstillä on verkkoaineiston kirjoittajan lisäämät tarkennukset, jotka ovat
+kirjoitettu InstructGPT:n koulutusprosessin mukaisesti. (9.)
+
+Kuten kuvasta 2 nähdään niin prosessin lopputuloksena oli syöte- ja vastauspareja, joilla SFT-mallia pystyttiin kouluttamaan. Tämän prosessin jälkeen malli
+pystyi antamaan käyttäjien tekemiin kyselyihin paremmin sopivia vastauksia
+kuin aiemmin. (4.)
+Seuraavaksi mallia hiottiin kouluttamalla palkintomalli, jossa mallin syötteet ovat
+aikaisemmasta poiketen kehotesarjoja ja vastauksia. Mallin tekemää vastausta
+kutsutaan palkinnoksi. Palkintomallia tarvitaan, jotta pystytään hyödyntämään
+tuetun oppimisen mallia, jossa malli oppii tuottamaan parhaiden palkintojen vastauksia eli toisin sanottuna parhaiten sopivia vastauksia käyttäjän tekemiin kehotteisiin. Palkintomallia opetettiin esittämällä asiantuntijoille SFT-mallin
+
+8
+tuottamia vastauksia, jotka sitten asiantuntijat laittoivat järjestykseen parhaasta
+huonoimpaan. Tätä arvosteltua dataa käytetään palkintomallin kouluttamisessa,
+jonka myötä malli pystyy oppia ihmisten mielestä parhaimman vastausmallin
+sille esitettäviin kehotteisiin. (4; 7, s. 8; 8.)
+Viimeisessä kolmannessa vaiheessa kehitetään Reinforcement Learning model
+eli suomennettuna vahvistusoppimisen malli, jossa edellisten vaiheiden aikana
+mallin saamat uudet kyvyt asetetaan kokeeseen, ja sille esitetään joku satunnainen uusi kehote ja mallin tehtävänä on palauttaa vastaus siihen. Malli käyttää vastauksen luontiin palkintomalli vaiheessa oppimaansa käytäntöä. Käytäntö on strategia, jolla malli oppi suorittamaan tehtävänsä eli tässä tapauksessa antamaan vastauksia, joista se sai parhaimman palkinnon. Samalla tavalla kuin palkintomallissa kehote ja vastaus parille määritetään palkintoarvo ja
+sillä jatkuvasti kehitetään mallin oppimaa käytäntöä. (4; 7, s. 9; 8.)
+
+9
+
+Kuva 3. Reinforcement Learning model eli Vahvistusoppimisen malli kuvattuna.
+Vasemmassa laidassa on OpenAI:n kirjoittamat selvennykset ja oikealla punaisella tekstillä on verkkoaineiston kirjoittajan lisäämät tarkennukset. (10.)
+
+Kuvassa 3 on kuvattu viimeisen vaiheen eteneminen ja se, kuinka mallin käytäntöä päivitetään hyödyntämällä metodia nimeltä PPO (Proximal Policy Optimization). PPO on OpenAI:n julkaisema vahvistusoppimisen algoritmi, jonka he
+ovat todenneet tehokkaaksi ja helpoksi käyttää. Käytännön päivittäminen palkinnon avulla saattaa johtaa ylioptimointiin. Tämän estämiseksi palkintoon lisättiin
+Kullback-Leibler-sakko, jonka tarkoituksena on vähentää uuden mallin antamien
+vastauksien eroavaisuutta alkuperäisen SFT-mallin antamien vastauksien
+kanssa. (4; 7, s. 9; 8.)
+
+10
+Näillä toimilla mallin toiminta saatiin aikaisempaa GPT-3-versiota auttavammaksi, todenmukaisemmaksi ja haitattomammaksi. ChatGPT:n toiminnassa on
+kuitenkin vielä rajoituksia, eikä se aina toimi oikein. ChatGPT voi joskus esimerkiksi kirjoittaa järkevältä kuulostavia vastauksia, jotka eivät välttämättä pidä
+paikkaansa. Se myös saattaa olettaa, mitä käyttäjä haluaa tietää ja näin vastaa
+käyttäjän mielestä vääränlaiseen kysymykseen. Malli saattaa myös vielä vastata haitallisiin kyselyihin tai esittää puolueellisia vastauksia. (6.)
+
+2.2.2 ChatGPT:n käyttäminen
+ChatGPT:n käyttäminen on käyttäjälle varsin helppoa. Käyttäjän tarvitsee vain
+syöttää käyttöliittymään kehote tai kuva, joiden pohjalta botti yrittää ymmärtää
+käyttäjän tarkoituksen ja luo siihen soveltuvan vastauksen. Käyttäjän luomat kehotteet toimivat tiedonvälityksen välineenä käyttäjän ja chattibotin välillä, jonka
+takia halutun vastauksen saamisessa kehotteiden selkeys ja tarkka muotoilu
+ovat tärkeässä roolissa. Hyvin suunnitelluilla kehotteilla voidaan siis vaikuttaa
+ChatGPT:n toimintaan positiivisesti ja niiden merkitys näkyy käyttäjälle chattibotin käytön aikana ominaisuuksissa kuten:
+•
+
+käytettävyys
+
+•
+
+joustavuus
+
+•
+
+tehokkuus
+
+•
+
+oppiminen.
+
+Kehotteet helpottavat ChatGPT:n käytettävyyttä, koska ne mahdollistavat suoraviivaisen ja helposti ymmärrettävän kommunikaation käyttäjän ja chattibotin
+välillä. Käyttäjän huolella suunnittelemat kehotteet mahdollistavat tekoälyn joustavuuden sen monipuoliseen soveltamiseen eri käyttökohteissa ja tehtävissä.
+Ne ohjaavat tekoälyn toimintaa ja auttavat tuottamaan tarkoituksen mukaista sisältöä eri konteksteissa. Kehotteet myös mahdollistavat käyttäjän nopean ja tehokkaan vuorovaikutuksen tekoälyn kanssa. Käyttämällä selkeitä ja lyhyitä kehotteita saa tekoälyn tuottamaan halutunlaisia vastauksia ilman tarvetta ylimääräiselle kommunikoinnille ja tarkennuksille. Viimeiseksi kehotteet tarjoavat
+
+11
+käyttäjille mahdollisuuden syventyä tutkimaan ja kokeilemaan chattibottien toimintaa, ja siten oppia käyttämään niitä tehokkaammin uusissa tilanteissa. (11.)
+Ideaalisen kehotteen kuuluisi olla selvä, yhtenäinen ja yksityiskohtainen, jotta
+käyttäjä pystyy tukemaan tekoälyä tuottamaan laatimaansa kysymykseensä
+hyödyllisen ja paikkansapitävän vastauksen. Mitä ideaalisen kehotteen luomisessa käyttäjän kannattaa ottaa huomioon? Täydellisen kehotteen luomiseksi
+käyttäjän on ensiarvoisen tärkeää olla selkeä ja spesifinen siitä, mitä halutaan
+ChatGPT:ltä. Kehotteen tulisi olla tarpeeksi yksityiskohtainen, jotta tekoäly ymmärtää käyttäjän vaatimukset, mutta tarpeeksi avoin, jotta se pystyy käyttämään
+omaa luovuuttaan. Tekoäly yrittää aina vastata käyttäjän luomiin kehotteisiin,
+jonka takia epämääräiset tai epäselvät kehotteet johtavat käyttäjän kannalta
+epäolennaisiin tai sekaviin vastauksiin. Taustatietojen ja käsitteiden selittäminen
+ja avaaminen kehotteessa auttaa ChatGPT:tä ymmärtämään aihepiiriä paremmin ja tuottamaan tarkempia vastauksia. On myös tärkeää välttää harhaanjohtavia kysymyksiä, jotka saattavat vaikuttaa tekoälyn vastaukseen oletusten tai
+ennakkoluulojen takia. Kehote kannattaa jakaa pienempiin ja vaiheittaisiin osiin,
+jotta ChatGPT pystyy tuottamaan paremmin järjestettyjä, yhtenäisiä ja yksityiskohtaisia vastauksia. (12.)
+
+2.2.3 ChatGPT:n vahvuudet ja heikkoudet
+Yksi ChatGPT:n vahvuuksista on sen monipuolisuus. Se pystyy suoriutumaan
+monenlaisista tehtävistä kuten selittämään historiasta, tuottamaan lyhyitä esseitä ja artikkeleita, kirjoittamaan runoja, vastaamaan koekysymyksiin ja simuloimaan chattihuonetta. ChatGPT on myös helposti saavutettavissa ja helppo
+käyttää. ChatGPT:tä on mahdollista käyttää ilmaiseksi, jos ei halua maksullista
+versiota, joka on tavallista versiota paremmin käytettävissä ja siinä on nopeampi vastauksen generointinopeus. ChatGPT:n erityinen vahvuus on sen tekstin tuottamiskyvyssä, ja se voi nopeasti generoida vastauksia.
+Vaikka ChatGPT kykeneekin moneen, niin heikkouksiakin siltä löytyy. Yhtenä
+heikkoutena voidaan pitää sen tunneälykkyyden puutetta. Tekoälypohjaisena
+
+12
+kielimallina sillä ei ole tunteita tai kykyä empatiaan. ChatGPT:n vastaukset saattavat olla myös puolueellisia, sillä siihen on heijastunut koulutusdatassa olevat
+puolueellisuudet, jotka tulevat nykymaailmasta. ChatGPT ei myöskään ole yhteydessä internetiin, jonka takia sen tiedot eivät päivity jatkuvasti ja sen tietämys
+insinöörityöni kirjoitushetkellä on vuoden 2021 jälkeisistä tapahtumista rajattua.
+
+3 Kyberhyökkäykset
+Tässä osiossa pureudutaan siihen, miten laajoihin kielimalleihin pohjautuvia ohjelmia kuten ChatGPT:tä voidaan käyttää kyberhyökkäyksissä. Osiossa käydään myös läpi, miten ChatGPT:n julkisuutta on hyödynnetty osana huijauksia.
+
+3.1 Chattibottien käyttö kyberhyökkäyksissä
+ChatGPT pääasiassa tuottaa siis ihmisen käyttämää luonnollista kieltä, mutta
+myös pystyy tuottamaan koodia monella eri ohjelmointikielellä. Tämänhetkisellä
+versiolla se pystyy jo luomaan perustyökaluja moneen erilaiseen haitalliseen
+tarkoitukseen. Tunnistettuja hyökkäystyyppejä, joihin LLM:ään pohjautuvia sovelluksia voidaan käyttää ovat:
+•
+
+kalastelu
+
+•
+
+käyttäjän manipulointi
+
+•
+
+haittakoodin generointi.
+
+Tämän on kuitenkin jo kehittäjät tiedostaneet mallien julkaisusta lähtien. OpenAI
+on yrittänyt aktiivisesti tehdä ChatGPT:stä haitattoman työkalun ja on lisännyt
+siihen turvallisuusominaisuuksia estääkseen käyttäjiä hyödyntämästä mallia
+haitalliseen tarkoitukseen. Yksi keino on ollut lisätä moderaattori, joka arvioi
+käyttäjän antaman kehotteen, ja jos kehote kuuluu määritettyjen haitallisen sisällön alueeseen, niin moderaattori rajoittaa ChatGPT:tä vastaamasta syötteeseen käyttäjän haluamalla tavalla. Esimerkiksi jos ChatGPT:tä pyytää kirjoittamaan haittaohjelman, niin malli kohteliaasti kieltäytyy kirjoittamasta ja kertoo,
+että se on sääntöjenvastaista. Kuitenkin vielä monet OpenAI:n tekemistä turvatoimista on kierrettävissä helposti kehotteen paremmalla suunnittelemisella.
+
+13
+Tätä kutsutaan prompt engineering -nimellä, joka voitaisiin suomentaa kehotteen suunnitteluksi. Prompt engineering on verrattain uusi käsite, jolla tarkoitetaan käyttäjän tapoja säätää paras mahdollinen tapa kysyä kysymys tekoälysysteemiltä, jotta saa haluamansa vastauksen. Kuten aikaisemmassa osiossa todettiin, niin kehotteen muotoilu on erittäin tärkeää, että ChatGPT saadaan toimimaan käyttäjän haluamalla tavalla. Prompt engineering on erittäin hyödyllinen ja
+tarvittava osa tekoälytyökalun käyttämisessä, mutta sitä voidaan myös hyödyntää moderaattorin asettamien rajoitusten ohittamiseen ja näin saada sen tuottamaan haitallista sisältöä. (13, 14, s. 5, 7–8; 15, s. 16–17.)
+Vaikka ChatGPT:n rajoituksien toimivuutta koko ajan kehitetään lisää ja joitakin
+aukkoja on saatu jo paikattua, niin haitallisen sisällön tuottamiseen on vielä monia keinoja prompt engineeringin avulla. Yleisimpiä tapoja ohittaa moderaattori
+ChatGPT:n tapauksessa ovat:
+•
+
+Annetaan vastaus ja kysytään ChatGPT:tä tuottamaan sitä vastaava
+kehote.
+
+•
+
+Pyydetään ChatGPT:tä antamaan vastaus koodinpätkänä tai esittämällä kuvitteellista henkilöä, joka puhuu aiheesta.
+
+•
+
+Muutetaan moderaattorin estojen laukaisevia sanoja ja muuttamalla
+kontekstia myöhemmin.
+
+•
+
+Keksitään kuvitteellisia esimerkkejä, jotka ovat helposti muutettavissa oikeiksi tapahtumiksi.
+
+•
+
+Muutetaan tyyliä ja mielipidettä hitaasti keskustelun edetessä.
+
+Mallin suojauksen murtamiseen ja estojen kiertämiseen on myös jo ehditty kehittämään edistyksellisiä kehotteita ja ohjeistuksia. Yksi suojauksen murtamistapa on nimeltään DAN (Do Anything Now), joka on erityisesti kehitetty kehote
+tai kehotesarja, jolla pystytään ohittamaan OpenAI:n asettamat suojaukset.
+DAN:in avulla ChatGPT saadaan vastaamaan mihin tahansa syötteeseen,
+vaikka se olisi haitalliseen tarkoitukseen. (14, s. 5–6.)
+
+14
+
+3.2 Kalastelu
+Verkkourkinta eli kalastelu on petos, joka yleensä suoritetaan naamioimalla
+sähköposti tai jokin muu viesti luotettavan yrityksen tai henkilön lähettämäksi,
+mutta sisältää saastuneen linkin tai liitteen. Kyberrikolliset käyttävät kalastelua
+hyödykseen, koska on paljon helpompaa saada uhri klikkaamaan luotettavalta
+näyttävää saastunutta linkkiä kuin muuten murtaa tietokoneen tai muun laitteen
+turvauksia. Kalasteluhyökkäykset saadaan erityisen toimiviksi, kun hyökkääjät
+tekevät viesteistä henkilökohtaisempia kuten esimerkiksi puhumalla viestissä
+uhrin työstä, henkilökohtaisesta historiasta, kiinnostuksista tai muusta tekemisestä. Tämä vaatii tiedonkeruu työtä. Hyökkääjät voivat kerätä tietoa muun muassa sosiaalisesta mediasta ja LinkedInistä. Viestin pitää olla riittävän uskottava, että uhrin saa klikkaamaan saastunutta linkkiä. Saastuneesta linkistä tai
+liitteestä klikkaaminen voi johtaa uhrin väärennetylle sivustolle tai lataamaan
+huomaamattaan laitteelleen haittaohjelman. Väärennetyille sivustoille ohjaamisen tarkoitus yleensä on saada uhri täyttämään lomake, johon uhri sitten kirjoittaa henkilökohtaista tietoa kuten salasanoja, käyttäjätunnuksia sekä pankkikortin tietoja. Kuvassa 4 on kalasteluhyökkäyksen kulku kuvattuna.
+
+Kuva 4. Kalasteluhyökkäyksen kulku kuvattuna. (16.)
+
+15
+Laajoihin kielimalleihin perustuvia sovelluksia voidaan käyttää kalasteluviestien
+teossa, jolloin viestien teko nopeutuu sekä kielioppi paranee. Kalasteluviestit
+usein tunnistetaankin huonosta kieliasusta ja kirjoitusvirheistä. ChatGPT:ssä
+pystyy lyhyelläkin syötteellä saamaan aikaan uskottavan kuuloisia viestejä.
+FBI:n vuoden 2021 raportin mukaan kalastelu oli kaikkein suurin rikostyyppi
+Amerikassa, joten noin suosittuna rikostyyppinä rikolliset varmasti yrittävät kaikin mahdollisin keinoin parantaa viestien uskottavuutta. (17; 18.)
+Kyberturvallisuuteen koulutuspalvelua tuottava yritys Hoxhunt on tehnyt tutkimuksen siitä, kuinka hyvin ChatGPT:n luomat kalasteluviestit pärjäävät ihmisten
+luomille viesteille. Tutkimuksessa ihmiset laativat neljä kehotetta, joiden pohjalta
+botti ja ihmiset suunnittelivat uskottavilta kuulostavia kalasteluviestejä. Hoxhuntin omassa verkossaan he lähettivät yli 100 eri maahan simulaatiosähköposteja
+noin 50 tuhatta kappaletta, joiden avulla he pystyivät selvittämään, onko käyttäjä klikannut haitallista linkkiä vai ilmoittanut viestistä eteenpäin turvallisuusuhkana. Tuloksena oli, että ihmisten luomat kalasteluviestit olivat vielä bottien luomia viestejä parempia ja haitallista linkkiä klikattiin noin 4,2 prosentista kaikista
+ihmisten luomista sähköposteista. Vastaava tulos botin luomille sähköposteille
+oli 2,9 prosenttia. Tämä tutkimus antaa osviittaa siitä, että ihminen pystyy vielä
+luomaan uskottavampia kalasteluviestejä, mutta teknologian kehittyessä noin
+pienen välimatkan kurominen umpeen voi tapahtua nopeastikin. Lisäksi täytyy
+muistaa, että ihmiset, jotka loivat sähköposteja, olivat ammattilaisia ja osasivat
+kieltä hyvin. Esimerkiksi kieltä huonosti puhuvat kalasteluviestien tekijät voivat
+bottia käyttämällä parantaa omia mahdollisuuksiaan onnistua huomattavasti
+huijauksessaan. Tutkimuksessa mainittiin myös, että paremmalla kehotteen
+suunnittelulla pystyttäisiin parantamaan botin luomien kalasteluviestien onnistumisprosenttia. (19.)
+
+3.3 Haittaohjelmien kirjoittaminen
+Haittaohjelma on laaja käsite, joka sisältää kaikki ohjelmistot ja koodit, jotka
+ovat haitallisia systeemeille. Haittaohjelmiin kuuluu muun muassa kiristysohjelmat, troijalaiset ja tietokonemadot. Haittaohjelmien tarkoituksena on aiheuttaa
+
+16
+vahinkoa ja käyttää saastutettua laitetta esimerkiksi tietojenkalastelussa tai palvelunestohyökkäyksissä. Haittaohjelmat mahdollistavat myös laitteen kaappaamiseen kokonaan rikollisen käytettäväksi tai monelle laitteelle tunkeutumisen
+yhtäaikaisesti. Haittaohjelmien mahdollistamia vahinkoja ovat muun muassa:
+•
+
+uhrin pankkitietojen tai rahan varastaminen
+
+•
+
+tiedostojen ja datan tuhoaminen tai varastaminen
+
+•
+
+arkaluontoisen materiaalin varastaminen
+
+•
+
+salasanojen ja tunnusten varastaminen
+
+•
+
+laitteen hyödyntäminen kryptovaluutan louhinnassa. (20.)
+
+Haittaohjelmia voidaan kehittää samanlaisesti kuin normaaliohjelmistoja. Haittaohjelmien tekoon on mahdollista hyödyntää esimerkiksi ChatGPT:tä sillä se
+osaa montaa eri ohjelmointikieltä ja pystyy analysoimaan koodia sekä löytämään virheitä koodista. ChatGPT:n osaamiin ohjelmointikieliin kuuluvat muun
+muassa Python, JavaScript ja C++.
+Onko väitteelle pohjaa, että ChatGPT voisi mahdollistaa edistyksellisenkin haittaohjelman luomisen, kun osaa kysyä botilta oikeita kysymyksiä. Kyllä on. Kyberturvallisuusyritys Forcepointin sivuilla on blogikirjoitus, jossa kerrotaan uuden nollapäiväviruksen luomisesta käyttäen pelkästään ChatGPT:n antamia tulosteita. Nollapäiväviruksen tekemisessä käytettiin hyödyksi edistyksellisiä tekniikoita kuten steganografiaa. Steganografialla tarkoitetaan tiedon kätkemistä
+johonkin tavallisen käyttäjän näkökulmasta harmittoman oloiseen digitaaliseen
+tietoon. Tiedon piilottamisessa voidaan käyttää hyödyksi esimerkiksi kuvia, digitoitua ääntä tai jopa tavallista tekstiä. Kuviin tietoa pystyy piilottamaan muuttamalla kuvan pikselien väriarvoja vähän, jotta viesti saadaan jaettua useammalle
+pikselille niin, ettei ihmissilmä erota kuvassa mitään epänormaalia. Nollapäiväviruksen luominen ChatGPT:n avulla vaati koodin luomisen osissa, sillä ChatGPT:n moderaattori estää haittaohjelmien luontipyynnöt. Lopputuotoksena oli
+koodi, joka etsii uhrin paikalliselta levyltä riittävän ison kuvatiedoston, johon pystyy esimerkiksi tallettamaan kaupallisesti arvokkaita PDF- tai DOCX-tiedostoja.
+Koodi käy läpi uhrin muutamia kansioita löytääkseen PDF- tai DOCX-tiedostoja.
+
+17
+Koodi lataa Google Driveen kuvat, joihin on piilotettu tiedoston sisältö. Drivestä
+ulkopuolinen hyökkääjä voi käydä dekoodaamassa kuviin piilotetun sisällön ja
+käyttää sitä haluamallaan tavallaan. Nollapäivä viruksen toteaminen tapahtui
+laittamalla haittakoodi viruksentarkistusohjelmaan, joka hankkii haittaohjelmatietonsa kymmenistä eri virustorjuntapalveluista. (21.)
+Haittaohjelma ei kuitenkaan heti mennyt läpi kaikista tarkastuksista vaan siihen
+piti tehdä hienosäätöä, joka vaatii tietämystä niin haittakoodin peittämiseen käytettävistä tekniikoista kuin haittaohjelmien tarkastusta tekevistä virustorjuntapalveluista. ChatGPT:n avulla koodia hienosäädettiin esimerkiksi niin, että ohjelma
+käynnistyy varsinaisesti vasta muutaman minuutin jälkeen, jotta se välttäisi joidenkin hiekkalaatikoiden monitoroinnin. Syy tähän oli, että jossain hiekkalaatikoissa on sisäänrakennettu ajastettu pysäytys, ja kun ajastus loppuu niin, ne
+antavat puhtaat paperit haittakoodille, vaikka analyysi ei olisikaan vielä valmis.
+Toinen muutos koodiin oli obfuscation. Obfuscation eli suomennettuna peittämisen tarkoituksena on tässä tapauksessa muuttaa haittaohjelman koodi vaikeasti
+ymmärrettävään muotoon niin ihmisille kuin tietokoneille. Tämä toteutetaan niin,
+ettei se muuta ohjelman toimintaa. Näin haittaohjelmasta ei pelkästään tehdä
+vaikeasti luettava, vaan myös sen olemassaolo pysyy piilossa. Tässä tapauksessa ChatGPT:tä pyydettiin vaihtamaan kaikki muuttujat satunnaisiin nimiin.
+Nämä kaikki toimet pystyttiin tekemään ChatGPT:n avulla, joka osoittaa sen
+monipuoliset hyödyntämismahdollisuudet haittaohjelman luomisen eri vaiheissa.
+(21.)
+ChatGPT:tä pystyy hyödyntämään myös polymorfisen haittaohjelman teossa.
+Polymorfinen haittaohjelma on tavallista haittaohjelmaa vaikeampi huomata ja
+analysoida turvallisuusohjelmistojen toimesta. Polymorfinen haittaohjelman toiminta perustuu sen kykyyn vaihtaa sisältämiään tietojaan niin, että sen toiminnallisuus säilyy, mutta se on vaikeampi identifioida. Yleensä vaihdoksia tapahtuu itse tiedoston nimessä, tiedoston paketoimistavassa tai kryptaustavassa
+sekä jopa siinä miten ohjelmisto toimii ajonaikana. HYAS-instituutin julkaisemassa raportissa kerrotaan BlackMamba -nimisestä proof of concept -tyyppisestä polymorfisesta näppäilyntallennintoiminnallisuudesta, jonka tekemisessä
+
+18
+hyödynnetään laajoja kielimalleja. BlackMamba käyttää ohjelmatiedostoa, joka
+ajonaikana hakee OpenAI:n käyttöliittymästä kuten ChatGPT uuden syntetisoidun haitallisen koodin, joka voi varastaa saastuneesta laitteesta käyttäjän painalluksia. Jotta ChatGPT:n moderaattorin pystyi ohittamaan tutkimusta tehdessä, niin tutkijoiden täytyi käyttää syötteessä auktoriteettista sävyä. (22.)
+
+Kuva 5. Tutkijan luoma koodi ja kehote, jolla ChatGPT:n saatiin auttamaan haittaohjelman teossa. (23.)
+
+Kuvassa 5 on koodia ja kehote, jonka avulla ChatGPT:n tai text-davinci-003 sai
+tuottamaan haittakoodia. Kuten kuvasta nähdään, syötteessä eli promptissa on
+hyödynnetty prompt engineering -keinoja ja esiinnytty tekoälylle turva-alan ammattilaisena, jonka täytyy opettaa näppäilyntallennin ohjelmien vaaroista. Kuvasta nähdään myös, että haittaohjelman teossa pystyttin hyödyntämään textdavinci-003-nimistä malli, joka kuuluu GPT-3-mallien sukuun ja on hyvin samankaltainen kuin ChatGPT. Text-davinci-003 on myös OpenAI:n julkaisema
+malli, joka on rakennettu InstructGPT:n päälle. (22.)
+Nämä kaksi esimerkkiä osoittavat sen, että ChatGPT:tä pystyy hyödyntämään
+edistyksellistenkin haittaohjelmien luonnissa ja niiden kehittämisessä. Se kuitenkin vaatii haittaohjelmia tekevältä ihmiseltä osaamista ja tietoa, että saa ChatGPT:n valjastettua käyttöönsä. Nykyhetkessä kuitenkin haittaohjelmien teon
+
+19
+kannalta ChatGPT on hyödyllisimmillään lyhyiden haittakoodinpätkien tuottamisessa ja koodin analysoinnissa, joka ei luo yhteiskunnalle vakavaa uhkaa.
+
+3.4 Valheelliset ChatGPT:t
+ChatGPT:n suosio on kasvanut älyttömän nopeaa vauhtia ja sen sivustolla käyneitä on ympäri maailmaa jo yli miljardin (24). Tämä suosittu sivusto on saanutkin heti rikolliset luomaan valesivustoja tai lisäosia, joihin käyttäjät saattavat
+epähuomiossa eksyä tai klikkaamalla saastunutta linkkiä, joka johtaa valesivustolle. Tämä voi olla hieman kiistanalaista tukeeko ChatGPT tämäntyyppisen kyberrikollisuuden teossa, mutta mielestäni suosionsa ansiosta sillä selvästi on
+suorayhteys valesivustojen tai valelisäosien aiheuttamiin vahinkoihin. Siitä
+kuinka paljon ChatGPT:n tunnettavuutta käytetään hyödyksi valesivustoissa,
+näyttää suuntaa Unit42-tutkijoiden tekemä avainsanahaku Advanced URL Filtering -systeemissä. Advanced URL Filtering on tapa, jossa käyttämällä syväoppimisteknologiaa hyväksi voidaan analysoida URL-osoitteita reaaliajassa ja luokitella niitä hyviin ja haitallisiin kategorioihin. Haitalliseen kategoriaan lisätyistä
+URL-osoitteista voi sitten hakea ChatGPT-avainsanalla kaikki havainnot, joissa
+on mainittu kyseinen avainsana. Kuva 6 näyttää kaksi suurempaa piikkiä päivinä, kun OpenAI julkaisi ChatGPT:n julkisen ohjelmontirajapinnan ja GPT-4.
+(25; 26 s. 2–3.)
+
+20
+
+Kuva 6. Haitalliset havainnot avainsanalla 'ChatGPT'. (27.)
+
+Kuvasta 6 voidaan todeta, että juuri julkaisupäivinä haitallisia sivustoja esiintyy
+enemmän kuin normaalisti. Tämä johtuu luultavasti siitä, että valesivustojen tekijät hyödyntävät ihmisille uutta sivustoa huijauksessaan, koska ihmiset eivät
+välttämättä tiedä, miltä ChatGPT:n verkkosivu näyttää ja mikä sen oikea URLosoite on. Myöhemmin kun käyttäjät ovat tallentaneet oikean URL-osoitteen selaimeensa tai tietävät, miten oikealle sivustolle pääsee, niin heidän huijaamisensa valesivustolle on paljon vaikeampaa.
+Huijareiden luomat ChatGPT-teemaiset valesivustot usein yrittävät matkia oikean ChatGPT:n ulkonäköä. Valesivustojen tarkoituksena on yleensä saada
+käyttäjä lataamaan haittaohjelma tai saada käyttäjä jakamaan tietoja itsestään.
+
+21
+
+Kuva 7. ChatGPT-teemainen huijaussivusto. Kuvaa rajattu oikealta, jotta se
+mahtuu paremmin. (28.)
+
+Kuvassa 7 on ChatGPT:n oikeaa sivustoa muistuttava valesivusto, jossa klikkaamalla ruudulla olevaa latausnappia käynnistyy troijalaisen lataaminen käyttäjän laitteelle. ChatGPT:tä ei voi kuitenkaa oikeasti ladata Windows:lle, josta
+voi käyttäjä päätellä painikkeen olevan haitallinen. Kuvassa 8 on vertailun
+vuoksi ChatGPT:n oikea verkkosivu, ja kuten nähdään niin sivustojen ulkonäkö
+on nopealla vilkaisulla hyvin samanlainen. Huomattavia eroja on muun muassa
+URL-osoitteessa ja painikkeissa.
+
+22
+
+Kuva 8. Näyttökuva ChatGPT:n oikeasta verkkosivusta.
+
+Lisäksi on huomattu tapaus, jossa Chromen Web Storesta oli mahdollista ladata
+valelisäosa Chat GPT -nimellä. Lisäosa toimi kuin oikea ChatGPT käyttäjän näkökulmasta, mutta kun käyttäjä oli ladannut lisäosan, se pystyi viemään Facebookiin liittyviä evästeitä hyökkääjän käyttöön. Hyökkääjä pystyi varastettuja
+evästeitä hyödyntäen lukitsemaan alkuperäisen käyttäjän Facebook-tilinsä ulkopuolelle vaihtamalla kirjautumistietoja ja hyödyntämään tilejä tulevien huijausten
+tai propagandan mainostamisessa. Arvion mukaan noin yhdeksäntuhatta ihmistä ehti ladata haitallisen lisäosan selaimeensa. (29.)
+
+23
+
+4 Suojautuminen
+4.1 ChatGPT:n käytön sääntely ja asetukset
+Kuten kaikkien uusien teknologioiden ja laitteiden kanssa niin niiden turvallisesta ja vastuullisesta käytöstä ensisijaisesti vastaa tuotetta tuottava yritys ja
+myös maan tai alueen asettamat säädännöt. OpenAI yrittää jatkuvasti kehittää
+ChatGPT:n ja muiden uusien malliensa turvallisuustutkimusta ja monitorointisysteemiään. Kuten insinöörityöni osiossa kolme todettiin, niin ChatGPT käyttää
+moderaattoria estääkseen haitallista käyttöä, mutta sen pystyy kuitenkin kiertämään. Mielestäni on selvää, ettei OpenAI halua tehdä ChatGPT:hen todella
+tiukkaa moderaattoria, joka estää suuren osan botin vastauksista, sillä se vaikuttaa huomattavasti käyttäjien käyttömukavuuteen ja ylipäänsä botin hyödyllisyyteen. Näin ollen sääntelyn tekeminen tuottavalle tekoälylle jää maiden tai
+alueiden hallinnon ratkaistavaksi.
+Ensimmäisenä länsimaana Italia kielsi ChatGPT:n käytön maassaan johtuen
+huolesta, ettei käyttäjien datan yksityisyydensuoja ole riittävällä tasolla. Italian
+viranomaiset löysivät neljä eri ongelmaa, jotka rikkoivat EU:n yleistä tietosuojaasetusta. Esimerkiksi rikkomuksia olivat, että ChatGPT voi tuottaa ihmisistä
+epätarkkaa tai valheellista tietoa ja eikä ihmisille ole informoitu siitä, että heidän
+dataansa kerätään chattibottia käyttäessä. Huoli ei ole aivan turha, sillä maaliskuussa bugin takia ChatGPT antoi joidenkin käyttäjien nähdä toisten aktiivisten
+käyttäjien chat-historian ja mahdollisesti ensimmäisen kirjoitetun viestin. Suosionsa ja tekniikan uutuuden takia muutkin maat yrittävät kiireisesti saada luotua
+sääntöjä ChatGPT:lle ja muille tuottaville tekoälyille. Mielestäni onkin tärkeää
+rakentaa yhteiset pelisäännöt tekoälyn käytölle, jotta sen aiheuttamat mahdolliset haittavaikutukset voidaan minimoida. (30; 31.)
+
+4.2 Suojautuminen kalastelulta
+ChatGPT saattaa luoda uskottavan kuuloisia kalasteluviestejä, mutta se ei voi
+vielä lisätä viesteihin logoja ja asetella viestin ulkonäköä. Kuitenkin jatkuvasti
+
+24
+kehittyvässä kyberrikollisuusmaailmassa ihmisten pitää pysyä varuillaan ja kouluttautua pitääkseen laitteensa ja tietonsa turvassa. Keinoja, joilla voi huomata
+kalasteluviestin ja välttää kalasteluviestien uhriksi joutumisen ovat:
+•
+
+Lähettäjän luotettavuutta epäillään, vaikka viesti vaikuttaakin tulleen
+luotettavalta taholta kuten yritykseltä.
+
+•
+
+Epämääräisten näköiset logot ja asettelu huomioidaan.
+
+•
+
+Lähettäjän osoite ja kaikki linkit tai liitteet tarkastellaan.
+
+•
+
+Kiireellisiä toimia vaativia viestejä epäillään.
+
+•
+
+Viestissä pyydetään henkilökohtaistatietoa kuten pankkitietoja tai sosiaaliturvatunnusta. (32.)
+
+Yleinen ohje on myös pitää käyttöjärjestelmä ja sovellukset ajantasaisina päivittämällä niitä aina, kun on mahdollista. Kyberrikolliset yrittävät usein hyödyntää
+päivittämättömien sovelluksien aukkoja päästäkseen sisään järjestelmään.
+
+4.3 Haittaohjelmilta suojautuminen
+Haittaohjelmia on hyvin paljon erilaisia ja niiden suojautumiseen on monia erilaisia keinoja. Tässä osiossa käydään läpi suojausmenetelmiä osiossa 3.3 mainittuihin haittaohjelmiin, jotka olivat polymorfinen haittaohjelma ja steganografiaa
+hyväksikäyttävä haittaohjelma.
+Polymorfisten haittaohjelmien kyky muuttua tekee niistä ovelia vastustajia, joilta
+suojautuminen on vaikeaa. Kuitenkin polymorfiselta haittaohjelmalta voi suojautua noudattamalla hyviä kyberturvallisuustapoja, joita ovat muun muassa:
+•
+
+ohjelmistojen pitäminen ajan tasalla
+
+•
+
+outojen linkkien ja liitteiden jättäminen avaamatta
+
+•
+
+salasanojen päivittäminen
+
+•
+
+datan varmuuskopiointi
+
+•
+
+virusturvan käyttäminen. (33.)
+
+Lueteltujen tapojen lisäksi kannattaa välttää epäluotettavia verkkosivuja ja internetyhteyksiä, jotta polymorfiset haittaohjelmat eivät pääse laitteelle.
+
+25
+Steganografiaa hyödyksi käyttäviä haittaohjelmia, jotka upottavat dataa bitti- tai
+pikselitasolla kuviin on melkein mahdotonta huomata, vaikka käyttäisi haittaohjelmien tunnistustyökaluja. Kuitenkin on olemassa tapa huomata kuvissa oleva
+haitallinen koodi, joka on metodi nimeltä CDR (Content Disarm and Reconstruction). CDR-toiminta perustuu siihen, että se olettaa kaikkien tiedostojen olevan
+haitallisia. Se aloittaa hajottamalla tiedostot, jonka jälkeen se poistaa niistä suorituskelpoiset ohjelmatiedostot tai muut osat, jotka ovat tiedostotyypin standardeista poikkeavia. Lopuksi CDR uudelleen rakentaa tiedostot, jolloin käyttäjä voi
+turvallisesti käyttää niitä normaaliin tapaan. Myös on mahdollista suojautua steganografiaa hyödyntäviä haittaohjelmia vastaan käyttämällä virusturvaa. Vaikka
+virusturva ei havaitse steganografiaa toiminnassaan, niin se kuitenkin tunnistaa
+itse steganografiaa hyödyntävien haittaohjelmien olemassaolon, joista se pystyy
+varoittamaan käyttäjää. (34.)
+
+5 Tulevaisuuden uhkakuvat
+Chattibottien tulevaisuus osana kyberhyökkäyksien tekoa on mielestäni vähintäänkin jännittävä. Kuten aikaisemmissa osioissa on osoitettu niin jo nyt niitä
+pystyy käyttämään monessa eri typpisessä kyberhyökkäyksessä. Teknologia
+kehittyy jatkuvasti ja OpenAI saattavat olla jo julkaisemassa tämän vuoden lopussa uuden GPT-5-mallin. Mihin kaikkeen chattibotit lähitulevaisuudessa pystyvät ja miten kyberrikolliset keksivät hyödyntää tätä teknologiaa, on vielä epäselvää, mutta kuitenkin hieman pystyy etukäteen pohtimaan riskejä. Kyberturvallisuusanalyytikot ovat ennustaneet ChatGPT:n ja tuottavan tekoälyn aiheuttamia uhkia vuodelle 2023, joita ovat seuraavat.
+•
+
+ChatGPT madaltaa pääsyä kyberrikollisuuteen.
+
+•
+
+Uskottavien kalasteluviestien teko muuttuu vielä helpommaksi.
+
+•
+
+Organisaatiot tulevat tarvitsemaan tekoälyn tuntevia turvallisuus ammattilaisia.
+
+•
+
+Tuottava tekoäly tekee nykyisistä uhkista laajempia. (35.)
+
+26
+Omasta mielestäni ChatGPT:n mahdollisuus madaltaa pääsyä kyberrikollisuuteen on varteen otettava uhka, koska kuten aikaisemmissa osioissa on mainittu,
+niin ChatGPT:tä on verrattain helppoa ja nopeaa käyttää. Rikollinen pystyy
+myös vähällä vaivalla saamaan ChatGPT:n tuottamaan kalasteluviestejä ja ainakin yksinkertaisia haittakoodinpätkiä. Vaativimpien haittaohjelmien teko kuitenkin tulee olemaan helpompaa osaaville kyberrikollisille ainakin vielä jonkin aikaa ilman ChatGPT:tä. Tämä johtuu siitä, että ChatGPT:n saaminen tuottamaan
+edistyksellistä haittakoodia vaatii itsessään jo paljon osaamista prompt engineeringin ja haittaohjelman toteuttamisen muodossa. Lisäksi ChatGPT:tä ei ole erityisesti koulutettu haittakoodin tuottamista varten, joten sen tuottama koodi ei
+aina edes toimi halutulla tavalla.
+Kalasteluviestien teon helpottumisesta on jo nyt havaintoja ja ChatGPT pystyykin tuottamaan uskottavan kuuloisia viestejä. ChatGPT myös vähentää kyberrikollisten resurssien tarvetta, sillä uskottavan kuuloisten viestien tekoon ei vaadittaisi enää monia ihmisiä ja ajankäyttö viestien teossa laskee. Mielestäni erityisen uhkan loisi, jos ChatGPT:llä voisi tulevaisuudessa tehdä myös ulkonäöllisesti uskottavia kalasteluviestejä, jotka olisivat esimerkiksi yrityksen logoilla ja
+väreillä varustettuja. Tämän ominaisuuden lisääminen ChatGPT:hen olisi mielestäni mahdollista hyvinkin nopeasti, sillä OpenAI:lla on myös DALL-E- ja
+DALL-E-2-nimiset tekoälypohjaiset kuvageneraattorimallit, jotka luovat visuaalisen kuvan sanallisen syötteen pohjalta.
+Pelkästään muutaman kuukauden aikana, jolloin olen insinöörityötä tehnyt, niin
+chattibottien kehittyminen on ollut huimaa ja uusia tapoja hyödyntää niitä löytyy
+jatkuvasti lisää. Mediassakin uutisoidaan melkein joka viikko jostain ällistyttävästä, johon ChatGPT tai sen kilpailijat kykenevät. Olisiko kehityksen mahdollista edistyä jopa niin, että chattibotit pystyvät tulevaisuudessa keskustella keskenään ja syrjäyttää ihmisen käskynantaja? Sen aika tulee näyttämään.
+
+27
+
+6 Yhteenveto
+Laajoihin kielimalleihin pohjautuvien chattibottien kuten ChatGPT:n kehitys on
+vasta alkutaipaleella ja niiden parhaita hyödyntämismahdollisuuksia vielä mietitään niin työpaikoilla kuin kouluissakin. Mietintään mukaan ovat innolla myös
+osallistuneet kyberturvallisuusasiantuntijat ja kyberrikolliset. Vaikka ChatGPT:n
+käyttöä osana laajamittaisia kyberhyökkäyksiä ei ole vielä havaittu, niin kuitenkin on todistettu, että sen kyky tuottaa vakuuttavia vastauksia kysymykseen
+kuin kysymykseen on mahdollista valjastaa erilaisten kyberhyökkäyksien tekoon
+kuten kalasteluviestien ja haittaohjelmien kirjoittamiseen. Chattibottien avulla ei
+voi vielä onneksi luoda kokonaan uusia kyberhyökkäystapoja, vaan hyökkäyksien teko on edelleen rikollisen oman osaamisen varassa. Se, mitä roolia ChatGPT ja sen kilpailijat esittävät tulevaisuuden kyberhyökkäyksissä, on vielä
+avoinna, mutta varmaa on, että noin edistyksellistä tekniikkaa rikolliset yrittävät
+päästä hyödyntämään.
+Insinöörityössäni pyrin tutustumaan laajoihin kielimalleihin pohjautuviin chattibotteihin ja selvittämään, minkälaisiin kyberhyökkäyksiin kyseistä teknologiaa
+voitaisiin käyttää. Tuon esiin työssäni, että ChatGPT:tä pystytään hyödyntämään kyberhyökkäyksien toteuttamisessa eri keinoin. Lukijat voivat hyödyntää
+työtäni ChatGPT:n rakenteeseen tutustumisessa ja ymmärtämään paremmin
+sen toimintaa. Työni lukijat saavat myös tietoa ChatGPT:n haitallisesta käytöstä
+osana kyberhyökkäyksiä, ja näin valveutuneisuus koko ajan muuttuvassa kyberturvallisuuden maailmassa kasvaa.
+Insinöörityöni alkuperäisessä suunnitelmassa oli tarkoitus tutustua myös ChatGPT:n kilpailijan Google Bardin toimintaan ja miten sitä voisi kyberhyökkäyksissä hyödyntää, mutta päätin rajata sen pois, kun se ei ollut vielä insinöörityötä
+tehdessäni yleisesti käytössä. Tästä voisi ainakin jatkaa tutkimusta, sillä vaikka
+ChatGPT ja Bard molemmat ovat laajoihin kielimalleihin pohjautuvia chattibotteja, niin niiden toiminta ja hyödyntämismahdollisuudet eroavat toisistaan. Etsiessäni tietoa työtäni varten vastaani tuli myös useita verkkoaineistoja, joissa
+kerrottiin, miten ChatGPT:tä voisi myös hyödyntää kyberhyökkäyksiltä
+
+28
+suojautumisessa. Näillä aineistoilla voisi laajentaa työssäni olevaa suojautuminen osiota ja vastaavasti todistaa, että ChatGPT:llä voi olla kyberturvallisuuden
+kannalta enemmän positiivisia vaikutuksia kuin negatiivisia.
+
+29
+
+Lähteet
+Teksti:
+1
+
+Kumar, Ajitesh. 2023. Large language models: concepts & Examples.
+Verkkoaineisto. <https://vitalflux.com/large-language-models-conceptsexamples/?utm_content=cmp-true>. Päivitetty 1.5.2023. Luettu 3.4.2023.
+
+2
+
+Lee, Angie. 2023. What Are Large Language Models Used For? Verkkoaineisto. <https://blogs.nvidia.com/blog/2023/01/26/what-are-large-language-models-used-for/>. Luettu 3.4.2023.
+
+3
+
+Kuva. <https://vitalflux.com/wp-content/uploads/2023/04/Large-languagemodels-LLM-building-blocks.png>. Katsottu 5.4.2023.
+
+4
+
+Ruby, Molly. 2023. How ChatGPT works: The Model Behind The Bot.
+Verkkoaineisto. <https://towardsdatascience.com/how-chatgpt-works-themodels-behind-the-bot-1ce5fca96286>. Luettu 7.4.2023.
+
+5
+
+2023. What is GPT? Verkkoaineisto. <https://aws.amazon.com/whatis/gpt/>. Luettu 10.4.2023.
+
+6
+
+OpenAI. 2022. Introducing ChatGPT. Verkkoaineisto. <https://openai.com/blog/chatgpt>. Luettu 7.4.2023.
+
+7
+
+OpenAI. 2022. Training language models to follow instructions with human
+feedback. Verkkoaineisto. <https://arxiv.org/pdf/2203.02155.pdf>. Luettu
+7.4.2023.
+
+8
+
+Kuva. <https://miro.medium.com/v2/resize:fit:828/format:webp/1*TcIrYoaEq5Hr69eJwHDIOQ.png>. Katsottu 7.4.2023.
+
+9
+
+Kuva. <https://miro.medium.com/v2/resize:fit:828/format:webp/1*b7iS44WofvHoNsHsGXKjFA.png>. Katsottu 7.4.2023.
+
+10
+
+Ramponi, Marco. 2022. How ChatGPT actually works. Verkkoaineisto.
+<https://www.assemblyai.com/blog/how-chatgpt-actually-works/>. Luettu
+7.4.2023.
+
+11
+
+Aaltonen, Jani. 2023. MIKÄ ON CHATGPT PROMPT – CHATGPT-TEKNIIKKA, KÄYTTÖ JA HYÖDYT SUOMEKSI. Verkkoaineisto.
+<https://www.salescommunications.fi/blog/mika-on-chatgpt-prompt-chatgpt-tekniikka-kaytto-ja-hyodyt-suomeksi>. Luettu 2.5.2023.
+
+30
+12
+
+McCoy, Julia. 2023. The Inside Scoop: The Secret to ChatGPT Prompts
+for Amazing Results. Verkkoaineisto. <https://contentatscale.ai/secret-tochatgpt-prompts/>. Luettu 2.5.2023.
+
+13
+
+Malwarebytes. 2023. What is ChatGPT?. Verkkoaineisto.
+<https://www.malwarebytes.com/cybersecurity/basics/chatgpt-ai-security>.
+Luettu 8.4.2023.
+
+14
+
+Europol. 2023. Tech Watch Flash – The impact of Large Language Models on Law Enforcement. Verkkoaineisto. <https://www.europol.europa.eu/cms/sites/default/files/documents/Tech%20Watch%20Flash%20%20The%20Impact%20of%20Large%20Language%20Models%20on%20Law%20Enforcement.pdf>. Luettu 8.4.2023.
+
+15
+
+CSA. 2023. Desing Copy of ChatGPT – Security Implications of ChatGPT.
+Verkkoaineisto. <https://cloudsecurityalliance.org/artifacts/security-implications-of-chatgpt/>. Luettu 8.4.2023.
+
+16
+
+Kuva. <https://www.cloudflare.com/img/learning/security/threats/phishingattack/diagram-phishing-attack.png>. Katsottu 10.4.2023.
+
+17
+
+Cloudflare, Inc. 2023. What is phishing attack?. Verkkoaineisto.
+<https://www.cloudflare.com/learning/access-management/phishing-attack/>. Luettu 10.4.2023.
+
+18
+
+Gillis, Alexander S. 2020. phishing. Verkkoaineisto. <https://www.techtarget.com/searchsecurity/definition/phishing>. Luettu 10.4.2023.
+
+19
+
+Åvist Pyry. 2023. ChatGPT vs. human phishing and social engineering
+study: Who’s better? Verkkoaineisto. <https://www.hoxhunt.com/blog/chatgpt-vs-human-phishing-and-social-engineering-study-whos-better>. Luettu
+10.4.2023.
+
+20
+
+F-Secure. 2021. Mikä on haittaohjelma?. Verkkoaineisto. <https://www.fsecure.com/fi/articles/what-is-malware>. Luettu 11.4.2023.
+
+21
+
+Mulgrew Aaron. 2023. I built a Zero Day virus with undetectable exfiltration
+using only ChatGPT propmpts. Verkkoaineisto. <https://www.forcepoint.com/blog/x-labs/zero-day-exfiltration-using-chatgpt-prompts>. Luettu 12.4.2023.
+
+22
+
+HYAS. 2023. BLACKMAMBA: AI-SYNTHESIZED, POLYMORPHIC
+KEYLOGGER WITH ON-THE-FLY PROGRAM MODIFICATION. Verkkoaineisto. <https://www.hyas.com/hubfs/Downloadable%20Content/HYASAI-Augmented-Cyber-Attack-WP-1.1.pdf>. Luettu 12.4.2023.
+
+31
+23
+
+Kuva. <https://www.hackread.com/wp-content/uploads/2023/03/chatgptpowered-blackmamba-malware-bypass-detection-1024x473.jpg>. Katsottu
+12.4.2023.
+
+24
+
+Ruby, Daniel. 2023. 57+ ChatGPT Statistics for 2023 (New Data + GPT-4
+Facts). Verkkoaineisto. <https://www.demandsage.com/chatgpt-statistics/>. Luettu 14.4.2023.
+
+25
+
+Peng Peng, Chen Zhanhao, Hu Lucas. 2023. ChatGPT-Themed Scam Attacks Are on the Rise. Verkkoaineisto. <https://unit42.paloaltonetworks.com/chatgpt-scam-attacks-increasing/>. Luettu 14.4.2023.
+
+26
+
+Palo Alto Networks. 2022. Advanced URL Filtering. Verkkoaineisto.
+<https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/datasheets/advanced-url-filtering>. Luettu 14.4.2023.
+
+27
+
+Kuva. <https://unit42.paloaltonetworks.com/wp-content/uploads/2023/04/word-image-127823-3.png>. Katsottu 14.4.2023.
+
+28
+
+Kuva. <https://unit42.paloaltonetworks.com/wp-content/uploads/2023/04/word-image-127823-4.png>. Katsottu 14.4.2023.
+
+29
+
+Saxena, Muskaan. 2023. This fake ChatGPT Chrome Extension could
+compromise your Facebook account. Verkkoaineisto. <https://www.techradar.com/news/this-fake-chatgpt-chrome-extension-could-compromiseyour-facebook-account>. Luettu 18.4.2023.
+
+30
+
+2023. Italy Bans ChatGPT over Data Privacy Concerns. Verkkoaineisto.
+<https://cookie-script.com/blog/italy-bans-chatgpt>. Luettu 23.4.2023.
+
+31
+
+OpenAI. 2023. March 20 ChatGPT outage: Here’s what happened. Verkkoaineisto. < https://openai.com/blog/march-20-chatgpt-outage>. Luettu
+1.5.2023.
+
+32
+
+Microsoft. 2023 How to protect against phishing attacks. Verkkoaineisto.
+<https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/phishing?view=o365-worldwide>. Luettu 19.4.2023.
+
+33
+
+Siewert, Renatta. 2021. Polymorphic Viruses – Best Practices to Prevent
+Them. Verkkoaineisto. <https://www.mimecast.com/blog/polymorphic-viruses--best-practices-to-prevent-them/>. Luettu 18.4.2023.
+
+34
+
+Lam, Vinh. 2023. Create and Prevent Steganography in Five Minutes.
+Verkkoaineist0. <https://www.opswat.com/blog/create-and-prevent-steganography-in-five-minutes>. Luettu 24.4.2023.
+
+32
+35
+
+Keary, Tim. 2023. Analysts share 8 ChatGPT security predictions for 2023.
+Verkkoaineisto. <https://venturebeat.com/security/analysts-share-8-chatgpt-security-predictions-for-2023/>. Luettu 20.4.2023.
+
+

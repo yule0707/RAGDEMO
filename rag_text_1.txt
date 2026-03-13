@@ -1,0 +1,524 @@
+Juha Haapala
+
+Verkkokurssin laatuarviointi ja kehittäminen
+
+Metropolia Ammattikorkeakoulu
+Insinööri (AMK)
+Tieto- ja viestintätekniikan tutkinto-ohjelma
+Opinnäytetyö
+13.10.2025
+
+Tiivistelmä
+Tekijä:
+Otsikko:
+Sivumäärä:
+Aika:
+
+Juha Haapala
+Verkkokurssin laatuarviointi ja kehittäminen
+17
+13.10.2025
+
+Tutkinto:
+Tutkinto-ohjelma:
+Ohjaajat:
+
+Insinööri (AMK)
+Tieto- ja viestintätekniikan tutkinto-ohjelma
+Osaamisaluejohtaja Janne Salonen
+
+Opinnäytetyön aiheena oli verkkokurssin arviointi ja sen kehittäminen. Työhön kuului
+Cisco kurssialustalla käytävät opinnot, jotka muodostivat suurimman osan kurssin sisällöstä, sekä itse koulun oma MOODLE osuus. Opinnäytetyöhön kuuluu kurssin läpikäyminen hyväksytysti, sen arviointi ja mahdolliset kehitystarpeet.
+Kurssin sisältö käytiin läpi ohjeitten mukaisesti. Opinnäyte työ tarkastelee erityisesti
+koulun omaa Moodle-alustalla läpi käytävää osuutta. Työssä kuitenkin käydään läpi
+kurssia kokonaisuutena, eikä jätetä pois esimerkiksi kurssin sisällön merkitystä tulevaisuuden koulutustarpeisiin. Työn yhteydessä kerättiin muistiinpanoja erityisesti kurssin toteutuksesta, sisällöstä, sen esityksestä ja ulkoasusta.
+Työssä onnistuttiin suunnitellusti ja kaikki tarpeellinen tieto saatiin kasattua ja analysoitua. Tämä työ ilmaisee hyvin kurssin tarpeellisuuden lisänä opintoihin kasvavan automatisoinnin ja kysynnän takia kaupallisella ja yksityisellä sektorilla. Sisältö oli itselleni
+jokseenkin tuttua ja tämä helpotti kurssin läpikäymistä. Kuitenkin aloittavalle, alasta
+kiinnostuneelle opiskelijalle, kurssi on varmasti haasteellinen, mutta ehdottomasti tarpeellinen. Työssä käytettiin eri AI-alustoja ja hakukoneita tiedon keräämiseen.
+
+Avainsanat: Cisco, IoT, IIoT, tietoliikenne, tietoturva, kehitys, arviointi, verkkokurssi
+
+Abstract
+Author:
+Title:
+Number of Pages:
+Date:
+
+Juha Haapala
+Quality Evaluation and Development of an Online Course
+17
+13.10.2025
+
+Degree:
+Degree Programme:
+Supervisors:
+
+Bachelor of Engineering
+Information and Communication Technology
+Janne Salonen, Head of Degree Programme in ICT
+
+The topic of this thesis was the evaluation and development of an online course. The
+work included studies carried out on the Cisco course platform, which formed the main
+part of the course content, as well as the school’s own MOODLE component. The
+thesis consisted of completing the course successfully, evaluating it, and identifying
+potential areas for improvement.
+The course content was completed according to the given instructions. The thesis particularly focuses on the part of the course implemented on the school’s own Moodle
+platform. However, the work also examines the course as a whole and does not exclude the significance of the course content in relation to future educational needs.
+During the process, notes were collected especially on the implementation, content,
+presentation, and appearance of the course.
+The work was successfully completed as planned, and all the necessary information
+was gathered and analyzed. This thesis demonstrates the importance of the course as
+an addition to studies, given the growing automation and demand for such knowledge
+in both the commercial and private sectors. The content was somewhat familiar to me,
+which made it easier to complete the course. However, for a beginner or someone
+newly interested in the field, the course can be quite challenging, but necessary. Various AI platforms and search engines were used to collect information for this work.
+
+Keywords: Cisco, IoT, IIoT, telecommunications, cybersecurity, development, evaluation, online course
+
+Sisällys
+Lyhenteet
+1
+
+Johdanto
+
+1
+
+2
+
+Mitä on IoT
+
+2
+
+2.1 IIoT kuluttaja-IoT:n vastinparina
+
+3
+
+2.2 Sovellusalueet ja tulevaisuus
+
+3
+
+2.3 Kyberturvallisuus, työllisyys ja poliittiset vaikutukset
+
+4
+
+3
+
+MOOC opintojaksot ja niiden laatuarviointi
+
+5
+
+4
+
+MOOQ pohjainen arviointi kurssista
+
+6
+
+4.1 Pedagoginen ja teknologinen suunnittelu (Design and Realization)
+
+6
+
+4.2 Tuki ja organisaatio (Support and Organization)
+
+7
+
+Itselleni tärkeimmät aiheet
+
+8
+
+5.1 Tietoliikenne ja IIoT
+
+8
+
+5
+
+6
+
+5.1.1 Keskeiset viestintäteknologiat
+
+8
+
+5.1.2 Integroitu tietoturva ja protokollat
+
+9
+
+5.2 Tietoturva ja IIoT
+
+10
+
+Yhteenveto ja kehitys
+
+11
+
+6.1 Kurssin arviointi
+
+12
+
+6.2 Puutteet ja strategiset kehityskohteet
+
+13
+
+6.3 Jatkuva parantaminen
+
+13
+
+6.4 Johtopäätökset ja tulevaisuuden merkitys
+
+14
+
+Lähteet
+
+16
+
+Lyhenteet
+
+AGV (automaattiohjatut ajoneuvot): Esimerkki kriittisistä liikkuvista laitteista, joille
+URWB-teknologia sopii haastavissa teollisuusympäristöissä.
+AI (Tekoäly): Auttaa analysoimaan valtavia määriä sensoreista saatua dataa ja
+tekemään ennusteita tai itsenäisiä päätöksiä; keskeinen osa Ciscon strategiaa
+uhkien tehokkaampaan ymmärtämiseen.
+AMR (autonomiset mobiilirobotit): Esimerkki kriittisistä liikkuvista laitteista, joille
+URWB-teknologia sopii haastavissa teollisuusympäristöissä.
+CIP (Critical Infrastructure Protection): NERC: n (North American Electric Reliability Corporation) standardi, jonka vaatimustenmukaisuudessa Cisco auttaa
+sähköyhtiöitä.
+IDMZ (teollinen demilitarisoitu vyöhyke): Perinteinen eristämismenetelmä, joka ei
+enää riitä teollisuusverkoissa digitalisaation ja etäkäytön lisääntyessä.
+IIoT (Industrial IoT): Esineiden internetin teollinen sovellus, joka mullistaa toimialoja kuten valmistus, logistiikka ja energiantuotanto.
+ISE (Identity Services Engine): Ciscon tuote, jonka kanssa Cisco Cyber Vision
+tekee yhteistyötä valvomaan segmentointikäytäntöjä.
+IT (tietotekniikka): Ympäristöt, joiden kanssa operatiivinen teknologia (OT) lähenee IIoT-viestintäteknologioiden alalla.
+IoT (esineiden internet): Teknologia, jonka ytimessä ovat esineiden internet ja
+sen teollinen sovellus, Industrial IoT.
+ML (koneoppiminen): Auttaa analysoimaan valtavia määriä sensoreista saatua
+dataa ja tekemään ennusteita tai itsenäisiä päätöksiä.
+
+MOOC (massiiviset avoimet verkkokurssit): Kurssit, joiden luomiseen ja hallintaan MOOQ:n Laatikkoluettelon ja Laadun Viitekehyksen (QRF) on tarkoitus toimia ohjeena.
+MOOQ: Viitekehys, jonka Laatikkoluettelon (The Checklist for Beginners) pohjana on Laadun Viitekehys (QRF).
+OT (operatiivinen teknologia): Ympäristöt, joiden kanssa tietotekniikka (IT) lähenee IIoT-viestintäteknologioiden alalla.
+P (Pedagoginen): Yksi QRF:n Näkökulmat-ulottuvuuden kolmesta näkökulmasta,
+joka keskittyy oppimistavoitteisiin ja opetusmenetelmiin.
+QRF (Quality Reference Framework / Laadun Viitekehys): Järjestelmällinen ohje
+korkealaatuisten massiivisten avoimien verkkokurssien (MOOC) luomiseen ja
+hallintaan; se on rakennettu Vaiheet-, Näkökulmat- ja Roolit-osien ympärille.
+R (Vastuussa): Roolit-ulottuvuuden määrittämä henkilö, joka on vastuussa jokaisesta prosessista.
+S (Strateginen): Yksi QRF:n Näkökulmat-ulottuvuuden kolmesta näkökulmasta,
+joka huomioi yleiset tavoitteet, budjetin, resurssit ja organisaation.
+SOC (turvallisuusvalvontakeskus): Yhtenäinen keskus, jonka merkitystä Rockwell Automation korostaa IT/OT-lähentymisessä.
+TSN (Time-Sensitive Networking): Joukko IEEE-standardeja, jotka parantavat
+standardi Ethernetiä mahdollistamaan deterministisen viestinnän.
+T (Teknologinen): Yksi QRF:n Näkökulmat-ulottuvuuden kolmesta näkökulmasta,
+joka kattaa alustan, työkalut ja median.
+
+URWB (Ultra-Reliable Wireless Backhaul): Langaton teknologiayhteys, joka tarjoaa suuren nopeuden, erittäin alhaisen latenssin ja saumattomat "make-beforebreak" -vaihdot.
+X (Osallisena): Roolit-ulottuvuuden määrittämä henkilö, joka on osallisena jokaisessa prosessissa.
+
+1 (17)
+
+1 Johdanto
+
+Teknologian nopea kehitys on viime vuosina muuttanut maailmaa radikaalisti, ja
+sen ytimessä ovat esineiden internet (IoT) ja sen teollinen sovellus, Industrial IoT
+(IIoT). Nämä teknologiat ovat mullistamassa useita toimialoja, kuten valmistusta,
+logistiikkaa ja energiantuotantoa, luoden aivan uudenlaisia tehokkuus- ja innovaatiomahdollisuuksia. Oma syvä kiinnostukseni teknologiaan ja sen käytännön
+sovelluksiin on johdattanut minut tutkimaan IIoT:n potentiaalia. Erityisesti 5G- ja
+6G-verkot luovat entistä paremmat edellytykset IoT-ratkaisujen laajamittaiselle
+käyttöönotolle niin arjessa kuin teollisuudessakin, mikä tekee aiheesta entistä
+ajankohtaisemman ja kiehtovan.
+Olen perehtynyt IoT-teknologioihin myös opiskellessani hyvinvointiteknologiaa,
+jossa IoT:ta hyödynnetään laajasti esimerkiksi etäseurantaan ja hyvinvointisovelluksiin. Nämä kokemukset ovat tarjonneet minulle arvokasta perspektiiviä IoT:n
+monipuolisuudesta ja sen soveltamisesta eri alojen tarpeisiin. Vaikka kuluttajapuolen IoT-ratkaisut painottuvat usein käyttömukavuuteen ja henkilökohtaiseen
+dataan, teollisessa kontekstissa fokus siirtyy kriittisten järjestelmien luotettavuuteen, skaalautuvuuteen ja turvallisuuteen. Olen saanut kokemusta myös kaupallisen ja turvallisuusalan IoT-ratkaisujen parissa, mikä on lisännyt ymmärrystäni
+erilaisista vaatimuksista ja haasteista, joita IoT-järjestelmiin liittyy. Nämä aiemmat
+opinnot ovat luoneet vankan pohjan, jolta on luontevaa syventää osaamista juuri
+teollisen IoT:n vaatimuksiin ja erityispiirteisiin. Tiedonhaussa on käytetty hyväksi
+hakukoneita ja eri AI-alustoja.
+Tämän opinnäytetyön tarkoituksena on arvioida ja kehittää "Introduction to Industrial IoT, Including Smart Grids, Industrial Processes, and Cybersecurity" kurssia. Työssäni pyrin yhdistämään akateemisen teorian käytännön soveltamiseen ja tarkastelemaan alan tulevaisuuden suuntauksia. Tavoitteena on laatia
+kattava kuvaus IIoT:n keskeisistä periaatteista ja sen soveltamisesta kriittisissä
+
+2 (17)
+infrastruktuureissa, kuten älykkäissä sähköverkoissa ja monimutkaisissa teollisissa prosesseissa. Lisäksi työssä korostetaan kyberturvallisuuden kasvavaa
+merkitystä IIoT-ekosysteemeissä, sillä järjestelmien digitalisaation myötä myös
+niiden haavoittuvuus kasvaa.
+Kurssi on merkittävä lisä koulutukselle, sillä se tarjoaa ajantasaista tietoa ja käytännön esimerkkejä, jotka auttavat ymmärtämään IIoT:n laajan potentiaalin.
+Opinnäytetyön myöhemmissä luvuissa perehdytään syvällisesti IoT:n tietoturvaan, teollisen ympäristön erityisvaatimuksiin ja erilaisiin tietoliikennemenetelmiin, jotka ovat elintärkeitä IIoT-ratkaisujen luotettavalle toiminnalle. Työn tulokset auttavat kurssin kehittämisessä ja takaavat, että opiskelijat saavat ajantasaista ja relevanttia tietoa yhdestä tämän hetken kuumimmista teknologisista
+suuntauksista.
+
+2 Mitä on IoT
+
+Nykymaailmassa teknologian kehitys on kiihdyttänyt tahtiaan ennennäkemättömällä vauhdilla. Tämän kehityksen ytimessä ovat esineiden internet (IoT) ja sen
+teollinen sovellus, Industrial IoT (IIoT), jotka mullistavat useita toimialoja, kuten
+valmistusta, logistiikkaa ja energiantuotantoa (De loitte, 2024). IIoT:n merkitys
+perustuu sen kykyyn tuottaa reaaliaikaista dataa, jonka avulla yritykset voivat
+tehdä nopeampia, älykkäämpiä ja ennakoivampia päätöksiä. Tänä päivänä, kun
+globalisaatio ja kiristyvä kilpailu ajavat yrityksiä kohti suurempaa tehokkuutta ja
+pienempiä kustannuksia, IIoT tarjoaa konkreettisia työkaluja näiden tavoitteiden
+saavuttamiseen. Tulevaisuudessa, kun tekoäly ja robotiikka integroituvat entistä
+syvemmin teollisiin prosesseihin, IIoT toimii hermokeskuksena, joka mahdollistaa
+älykkäiden, itsenäisesti toimivien ekosysteemien luomisen.
+
+3 (17)
+
+2.1 IIoT kuluttaja-IoT:n vastinparina
+
+Vaikka IIoT ja kuluttaja-IoT (esim. älykodit, puettavat laitteet) perustuvat samankaltaisiin teknologioihin, niiden vaatimukset eroavat dramaattisesti. Kuluttaja-IoTlaitteissa priorisoidaan käyttömukavuutta ja estetiikkaa, kun taas IIoT-ratkaisuissa prioriteetteina ovat kestävyys, luotettavuus ja turvallisuus. IIoT-järjestelmät on suunniteltu kestämään vuosikymmeniä äärimmäisissä olosuhteissa, kuten kuumuudessa, kosteudessa ja tärinässä, ilman, että ne vaarantavat kriittisten
+prosessien toimintaa. Esimerkiksi öljynporauslautalla oleva anturi altistuu jatkuvasti suolaiselle ilmalle ja lämpötilan vaihteluille, kun taas älykellon kestävyysvaatimukset ovat huomattavasti vähäisemmät. Lisäksi IIoT-järjestelmien on kyettävä käsittelemään suuria määriä reaaliaikaista dataa, usein millisekuntien tarkkuudella, mikä asettaa korkeampia vaatimuksia verkkoyhteyksille ja laskentateholle.
+
+2.2 Sovellusalueet ja tulevaisuus
+
+IIoT:n sovellusalueet ovat laajat ja monipuoliset, ulottuen valmistavasta teollisuudesta energian ja logistiikan sektoreille. Ennakoiva huolto on yksi merkittävimmistä sovelluksista. Sen sijaan, että huolto tehtäisiin määräaikojen perusteella,
+IIoT-anturit keräävät tietoa laitteiden kunnosta ja varoittavat huoltotarpeesta ennen vian syntymistä (McKinley, 2022). Tämä vähentää yllättäviä tuotantokatkoksia ja pienentää huoltokustannuksia. IIoT:n avulla voidaan myös optimoida tuotantolinjoja, tehostaa energianhallintaa ja parantaa työturvallisuutta. Älykkäät
+sähköverkot eli Smart Gridit ovat toinen tärkeä IIoT:n sovelluskohde, jossa anturit
+ja automaatio auttavat optimoimaan sähkönjakelua ja reagoimaan nopeasti häiriöihin (ABB, 2024).
+
+4 (17)
+IIoT:n tulevaisuus on vahvasti sidoksissa 5G- ja 6G-verkkojen kehitykseen.
+Nämä verkot mahdollistavat entistä nopeamman ja luotettavamman tiedonsiirron,
+mikä on välttämätöntä reaaliaikaisten ja kriittisten prosessien hallinnassa (Forbes, 2025). Tekoälyn (AI) ja koneoppimisen (ML) rooli kasvaa myös jatkuvasti:
+ne auttavat analysoimaan valtavia määriä sensoreista saatua dataa ja tekemään
+ennusteita tai jopa autonomisia päätöksiä ilman ihmisen väliintuloa.
+
+2.3 Kyberturvallisuus, työllisyys ja poliittiset vaikutukset
+
+Kyberturvallisuus ei ole IIoT:ssä pelkkä lisäominaisuus, vaan ehdoton edellytys.
+Teolliset järjestelmät ovat houkuttelevia kohteita kyberrikollisille ja jopa kansallisvaltioiden tukemille toimijoille. Mahdollisia uhkia ovat esimerkiksi tuotantolinjan
+sabotointi, teollisuusvakoilu tai kiristysohjelmahyökkäykset, jotka voivat halvaannuttaa kriittisen infrastruktuurin toiminnan. IIoT:n turvallisuus on toteutettava kerroksittain, eli jokaisella järjestelmän tasolla on oltava omat suojauksensa. Tämä
+alkaa anturitasolta, jossa data salataan jo lähdettäessä, jatkuu turvattujen tietoliikennekanavien kautta ja päättyy pilvipalveluihin, joissa dataa käsitellään (IBM,
+2023).
+IIoT:n vaikutukset työllisyyteen ovat monitahoisia. Toisaalta se voi johtaa tiettyjen
+rutiininomaisten, manuaalisten tehtävien automatisointiin ja siten työpaikkojen
+vähenemiseen esimerkiksi tuotantolinjoilla ja logistiikassa. Tällöin työntekijöiltä
+vaaditaan enemmän osaamista koneiden ohjaamiseen ja valvontaan. Toisaalta
+IIoT luo myös uudenlaisia työpaikkoja, joissa tarvitaan uudenlaista osaamista.
+Tällaisia työtehtäviä ovat esimerkiksi data-analyytikot, kyberturvallisuusasiantuntijat, robotiikan insinöörit ja IoT-ratkaisujen kehittäjät. Siirtyminen kohti IIoT-järjestelmiä edellyttääkin nykyisen työvoiman uudelleenkouluttamista ja jatkuvaa
+oppimista, jotta he voivat sopeutua muuttuvaan työympäristöön.
+
+5 (17)
+IIoT:llä on myös merkittäviä poliittisia vaikutuksia. Se voi tehostaa kansallista tuotantoa, mikä parantaa kilpailukykyä ja luo uusia työpaikkoja, mutta toisaalta se
+voi myös lisätä riippuvuutta ulkomaisista teknologiatoimittajista ja luoda haavoittuvuuksia kyberhyökkäyksille. Järjestöjen ja hallitusten on kehitettävä yhteisiä
+sääntöjä ja standardeja varmistaakseen tietoturvallisuuden ja järjestelmien yhteen toimivuuden. Esimerkiksi kriittisen infrastruktuurin IIoT-järjestelmien sääntelyyn ja valvontaan liittyvät kysymykset nousevat esiin yhä useammin poliittisessa
+keskustelussa.
+
+3 MOOC opintojaksot ja niiden laatuarviointi
+
+Laatikkoluettelo (The Checklist for Beginners) perustuu Laadun viitekehykseen
+(Quality Reference Framework, QRF), joka tarjoaa järjestelmällisen ohjeiston
+korkealaatuisten massiivisten avoimien verkkokurssien (MOOC) suunnitteluun,
+toteutukseen ja arviointiin. QRF muodostuu kolmesta pääulottuvuudesta: Vaiheet, Näkökulmat ja Roolit (MOOQ, 2018).
+Vaiheet-ulottuvuus kattaa koko verkkokurssin elinkaaren, joka sisältää analyysin,
+suunnittelun, toteutuksen, realisoinnin ja arvioinnin (MOOQ, 2018, A-1–E-4).
+Tämä jatkuva prosessi varmistaa, että kurssin laatua arvioidaan ja kehitetään
+säännöllisesti osana jatkuvaa parantamisen sykliä.
+Näkökulmat-ulottuvuus varmistaa, että jokaista vaihetta tarkastellaan kolmesta
+eri näkökulmasta: pedagoginen, teknologinen ja strateginen (MOOQ, 2018, D-1–
+D-7). Pedagoginen näkökulma keskittyy oppimistavoitteisiin ja opetusmenetelmiin, teknologinen näkökulma kattaa alustan, työkalut ja median, ja strateginen
+näkökulma huomioi tavoitteet, resurssit ja organisaation.
+
+6 (17)
+Roolit-ulottuvuus tunnistaa keskeiset osallistujat: suunnittelija, fasilitaattori ja tarjoaja (MOOQ, 2018, R-1–R-3). Jokaiselle prosessille määritellään, kuka on vastuussa (R) ja kuka on osallisena (X), mikä tukee kurssin laadunhallinnan läpinäkyvyyttä ja tehokkuutta.
+
+4 MOOQ pohjainen arviointi kurssista
+
+Moodle-kurssi *Introduction to Industrial IoT, Including Smart Grids, Industrial
+Processes, and Cybersecurity* on rakenteeltaan vahva ja linjassa MOOQ-tarkistuslistan suunnittelu- ja toteutusvaiheiden kanssa (MOOQ, 2018, D-1–I-6). Kurssi
+osoittaa erityistä vahvuutta pedagogisesta ja teknologisesta näkökulmasta.
+
+4.1 Pedagoginen ja teknologinen suunnittelu (Design and Realization)
+
+Pedagoginen konsepti on rakenteeltaan johdonmukainen ja etenee loogisesti
+neljän kurssin kokonaisuutena, mikä vastaa QRF:n vaatimuksia selkeille oppimistavoitteille ja johdonmukaiselle sisällön jäsentelylle (MOOQ, 2018, D-1). Kurssin toteutus tukee itseohjautuvaa oppimista ja tarjoaa oppijalle joustavan ja yksilöllisen oppimispolun (MOOQ, 2018, R-2).
+Teknologisesta näkökulmasta kurssi hyödyntää tehokkaasti Moodle-ympäristöä
+ja Cisco Packet Tracer -simulaatiotyökalua, mikä vahvistaa käytännönläheistä
+oppimista ja aktiivista osallistumista (MOOQ, 2018, D-6). Kurssin saavutettavuus
+
+7 (17)
+ja yhteensopivuus eri käyttöjärjestelmien kanssa tukevat teknistä laatua ja opiskelijoiden tasa-arvoista osallistumista.
+Kurssin tukirakenteet ja organisaatiolliset määrittelyt osoittavat kohtalaista toteutumista, mutta niissä on kehittämisen varaa (MOOQ, 2018, R-1). Vaikka kurssilla
+on viestintäkanavia, kuten ”Teacher Announcements” ja ”Ask and Answer Forum”, fasilitaattorien ja teknisen tuen vastuut eivät ole selkeästi määriteltyjä.
+Tämä puute heikentää palautteen ja jatkuvan kehittämisen mekanismien arvioitavuutta (MOOQ, 2018, E-1–E-4).
+
+4.2 Tuki ja organisaatio (Support and Organization)
+
+Kurssin kuvaus osoittaa kuitenkin kohtalaista toteutumista ja huomattavia puutteita määritellyissä Tuki- ja Organisaatio-rakenteissa, jotka ovat elintärkeitä
+Strategisia komponentteja. Vaikka viestintä on järjestetty "News-Teacher Announcements" (Opettajan ilmoitukset) ja julkisen "Ask and Answer - Discussion
+Forum for Everyone" (Kysy ja vastaa - keskustelufoorumi kaikille) kautta, organisaatioroolit ja vastuut fasilitaattoreille, tekniselle tukihenkilöstölle tai odotetut
+vastausajat eivät ole nimenomaisesti määriteltyjä. Syvällisempi arviointi MOOQviitekehyksen mukaisesti edellyttäisi myös tietoa kurssin arviointisuunnitelmasta
+ja miten itse kurssin laatua arvioidaan. Järjestelmällisesti jatkuvaa parantamista
+varten oppilaiden palaute ja data on edellytys, mikä ei tällä hetkellä näy annetussa kurssikuvausmateriaalissa.
+Yhteenvetona voidaan todeta, että kurssi onnistuu erinomaisesti oppimissuunnittelun rakenteellisessa ja teknisessä laadussa, mutta sen laatuarviointia voitaisiin edelleen vahvistaa määrittelemällä tarkemmin tukihenkilöstön roolit sekä
+kurssin sisäiset arviointiprosessit jatkuvan laadun varmistamiseksi (MOOQ,
+2018, E-3–E-4).
+
+8 (17)
+
+5 Itselleni tärkeimmät aiheet
+
+5.1 Tietoliikenne ja IIoT
+Kurssin kaikissa neljässä osassa törmätään tietoliikenteeseen tavalla tai toisella,
+joten ajattelin kohdentaa tietoliikenteen omaksi osakokonaisuudeksi. Cisco on
+keskeinen toimija teollisen esineiden internetin (IIoT) viestintäteknologioiden
+alalla, ensisijaisesti kattavan portfolionsa kautta, joka on suunniteltu kuromaan
+umpeen tietotekniikan (IT) ja operatiivisen teknologian (OT) ympäristöjen välistä
+kuilua (Cisco Blogs – Industrial IoT). Tämä lähentyminen on olennaista nykyaikaiselle teollisuusautomaatiolle, joka vaatii erittäin suorituskykyistä, turvallista ja
+luotettavaa verkotusta. Ciscon strategia keskittyy teollisuustason verkkolaitteiston, edistyneiden langattomien ratkaisujen ja integroidun tietoturvan toimittamiseen (Koenig Solutions). Tässä haluaisinkin vielä painottaa IoT järjestelmien
+osaamisen tärkeyttä tulevaisuuden työympäristöissä.
+
+5.1.1 Keskeiset viestintäteknologiat
+Ciscon osallistuminen keskittyy IIoT-viestinnän perusinfrastruktuurin tarjoamiseen, varmistaen vankan ja ennakoitavan tiedonvaihdon. Cisco tarjoaa täyden
+valikoiman lujitettuja kytkimiä, reitittimiä ja langattomia tukiasemia, jotka on suunniteltu erityisesti ankariin teollisuusympäristöihin ja jotka jakavat yhteisen perustan yritysverkkotuotteiden kanssa IT- ja OT-tiimien yhteistyön helpottamiseksi.
+Tärkeä tarjous on Time-Sensitive Networking (TSN), joukko IEEE-standardeja,
+jotka parantavat standardi Ethernetiä mahdollistamaan deterministisen viestinnän. TSN varmistaa luotettavat, ennakoitavat verkkopalvelut rajatulla latenssilla
+ja pienillä viivevaihteluilla, mikä on elintärkeää reaaliaikaisille ohjaussovelluksille,
+
+9 (17)
+kuten liikkeenohjaukselle ja robotiikalle valmistuksessa (NI – National Instruments, 2025; PLANET Technology USA).
+Lisäksi Ultra-Reliable Wireless Backhaul (URWB) -teknologia tarjoaa langattoman yhteyden suurella nopeudella, erittäin alhaisella latenssilla ja saumattomilla
+"make-before-break" -vaihdoilla, mikä tekee siitä sopivan kriittisille liikkuville laitteille, kuten automaattiohjatuille ajoneuvoille (AGV) ja autonomisille mobiiliroboteille (AMR) haastavissa teollisuusympäristöissä.
+Laitteiden hallinnan osalta yhteistyöt, kuten Tata Communicationsin kanssa
+tehty, integroivat edistyneen eSIM-orkestroinnin Ciscon IoT Control Center -laitteiden hallintaympäristöön, mikä yksinkertaistaa globaaleja yritysten IoT-käyttöönottoja puuttumalla pirstaloituneisiin SIM-laitteisto- ja käyttöönottohaasteisiin
+yhtenäisen yhteyskokemuksen saavuttamiseksi (IoT Now News & Reports,
+2025).
+
+5.1.2 Integroitu tietoturva ja protokollat
+Viestinnän IIoT:ssä on oltava turvallista, mikä on Ciscon ensisijainen painopiste.
+Cisco integroi tietoturvan suoraan teollisuusverkon rakenteeseen tarjotakseen
+paremman näkyvyyden, segmentoinnin ja uhkien havaitsemisen.
+Ratkaisut, kuten Cisco Cyber Vision, tarjoavat näkyvyyden OT-resursseihin ja
+havaitsevat poikkeavuuksia, mahdollistaen kattavan tietoturva-arkkitehtuurin,
+joka yhdistää IT:n ja OT:n teollisten prosessien suojaamiseksi. Tämä integroitu
+tietoturvalähestymistapa auttaa myös teollisuudenaloja täyttämään kriittisen infrastruktuurin vaatimustenmukaisuusmääräykset
+Ciscon teollisuusratkaisut on myös suunniteltu mukautumaan laajaan valikoimaan IIoT:ssä käytettyjä viestintäprotokollia, hyödyntäen perinteistä Ethernetiä
+
+10 (17)
+ja Wi-Fiä samalla kun ne tarjoavat liitäntöjä teollisuuskohtaisille ja ei-IP-protokollille, varmistaen turvallisen tiedonsiirron reunalta tietokeskukseen (Cisco Blogs –
+Powering Up Security: How Cisco Helps Utilities Navigate NERC CIP Compliance).
+
+5.2 Tietoturva ja IIoT
+
+Ciscon näkökulma teollisen esineiden internetin (IIoT) kyberturvallisuuteen korostaa voimakkaasti IT- ja OT-verkkojen lähentymistä sekä Nolla Luottamus
+(Zero Trust) -arkkitehtuurin laajentamista teollisiin ympäristöihin. Cisco pitää
+verkkoinfrastruktuuria keskeisenä turvallisuusalustana, joka mahdollistaa näkyvyyden, segmentoinnin ja uhkien havaitsemisen. Cisco ajaa voimakkaasti Zero
+Trust -mallin laajentamista yritysverkoista (IT) teollisiin verkkoihin (OT), koska perinteiset eristämismenetelmät, kuten teollinen demilitarisoitu vyöhyke (IDMZ), eivät enää riitä digitalisaation ja etäkäytön lisääntyessä.
+Nolla Luottamus -lähestymistapa on välttämätön, koska teollisuusverkot ovat
+usein litteitä ja huonosti segmentoituja, mikä antaa hyökkääjille mahdollisuuden
+levitä nopeasti koko laitokseen, jos yksi laite vaarantuu (Industrial Cyber, 2024).
+Ciscon ratkaisut, kuten Cisco Cyber Vision, upotetaan suoraan teollisuusverkkolaitteisiin tarjoamaan reaaliaikaista näkyvyyttä kaikista OT-laitteista, niiden haavoittuvuuksista ja käyttäytymisestä (Cisco Blogs, 2025). Tämän näkyvyyden
+avulla luodaan ja valvotaan segmentointikäytäntöjä (ISA/IEC-62443-vyöhykkeet
+ja johtimet) automaattisesti yhteistyössä muiden Cisco-tuotteiden, kuten Identity
+Services Engine (ISE) ja DNA Centerin kanssa, varmistaen, että laitteet voivat
+kommunikoida vain tarvitsemiensa resurssien kanssa (Cisco Blogs, 2025).
+Cisco korostaa, että IT:n ja OT:n lähentyminen on suurin haaste ja mahdollisuus
+(Rockwell Automation, 2025). Teollinen verkostoituminen on siirtynyt sivuasiasta
+
+11 (17)
+pakolliseen painopisteeseen kyberturvallisuuden ja tekoälyn valmiuden vuoksi,
+kun yritykset pyrkivät hyödyntämään OT-dataa liiketoiminnan parantamiseen
+(Nomios Group, 2025). Ratkaisut, kuten Cisco Cyber Vision, toimivat siltana tarjoamalla OT-varallisuusprofiileja ja turvallisuustietoja IT-järjestelmiin, kuten
+Splunkiin, luoden yhtenäisen varastoluettelon ja parantaen uhkien havaitsemista
+kaikissa toimialueissa.
+Lisäksi Ciscon vuoden 2025 kyberturvallisuuden valmiusindeksi (Cybersecurity
+Readiness Index) osoittaa, että Machine Trustworthiness (koneen luotettavuus)
+on nopeimmin kasvava alue, ja yritykset investoivat voimakkaasti koneiden todennukseen, mobiililaitteiden hallintaan ja päätepisteiden suojaustyökaluihin
+IIoT-laitteiden suojaamiseksi (Cisco, 2025; Device Authority, 2025; Digi International, 2025). Tekoäly (AI) on myös keskeinen osa Ciscon strategiaa, sillä sitä
+käytetään uhkien entistä tehokkaampaan ymmärtämiseen ja ratkaisujen tehostamiseen, kuten XDR (Extended Detection and Response) -alustassa, joka luo ja
+suorittaa automaattisia tutkintasuunnitelmia uhkien nopeuttamiseksi (Cyber Magazine, 2025; MDPI, 2022).
+
+6 Yhteenveto ja kehitys
+
+Tämän opinnäytetyön tavoitteena oli arvioida ja kehittää "Introduction to Industrial
+IoT, Including Smart Grids, Industrial Processes, and Cybersecurity" -verkkokurssia, yhdistäen akateemisen teorian käytännön sovelluksiin Industrial IoT:n (IIoT)
+kontekstissa. Työ perehtyi kurssin IIoT:n keskeisiin periaatteisiin, sen soveltamiseen kriittisissä infrastruktuureissa, kuten älykkäissä sähköverkoissa (Smart
+Grids), ja korosti kyberturvallisuuden kasvavaa merkitystä.
+
+12 (17)
+IIoT:n merkitys nykymaailmassa perustuu sen kykyyn tuottaa reaaliaikaista dataa, mikä mahdollistaa yrityksille nopeammat ja ennakoivammat päätökset ja tarjoaa konkreettisia työkaluja tehokkuuden ja kustannussäästöjen saavuttamiseen
+globalisaation ja kiristyvän kilpailun keskellä.
+Keskeisenä erona kuluttaja-IoT:hen verrattuna IIoT-ratkaisuissa korostuvat kestävyys, luotettavuus ja turvallisuus, jotta ne voivat toimia vuosikymmeniä äärimmäisissä teollisuusolosuhteissa vaarantamatta kriittisiä prosesseja. Tulevaisuudessa IIoT:n rooli hermokeskuksena tekoälyn ja robotiikan integroiduissa ekosysteemeissä korostuu entisestään, ja sen kehitys on vahvasti sidoksissa 5G- ja 6Gverkkojen luomaan entistä nopeampaan ja luotettavampaan tiedonsiirtoon.
+Tässä kyseisessä kurssissa Ciscon laitteet ja tarjoama koulutus oli yksi tärkeimpiä komponentteja. Täytyy kuitenkin muistaa, että muitakin valmistajia ja kehittäjiä on olemassa, joilla on omat standardinsa ja laitteensa. Cisco on kuitenkin hyvä
+esimerkki niin kouluttajana ja laitevalmistajana jo pelkästään sen suosion ja käytön takia.
+
+6.1 Kurssin arviointi
+
+Kurssin arviointi suoritettiin MOOQ-laatutarkistuslistan (Quality Reference Framework, QRF) mukaisesti, tarkastellen laatua vaiheiden, näkökulmien (Pedagoginen, Teknologinen, Strateginen) ja roolien kautta. Arviointi osoitti kurssin menestyvän erittäin hyvin Pedagogisen ja Teknologisen suunnittelun ja toteutuksen
+laadussa. Kurssin neliosainen kokonaisrakenne ja selkeät oppimistavoitteet, kuten IT/OT-järjestelmien integrointi, luovat vahvan sisällön rakenteen ja loogisen
+etenemisen. Suoritin itse kyseisen kurssin moitteitta ja en huomannut varsinaisia
+ongelmia Ciscon tai Metropolian puolelta, ennemminkin pieniä lisäyksiä.
+
+13 (17)
+Erityisesti Cisco Packet Tracer -simulaatiotyökalun pakollinen käyttö varmistaa,
+että oppimistoiminnot ovat aktiivisia ja käytännönläheisiä, siirtäen painopisteen
+passiivisesta tiedon kulutuksesta, aktiiviseen taitojen kehittämiseen.
+Tämä teknologinen valinta on merkittävä laatuindikaattori teknisessä koulutuksessa, ja kokonaisuutena nämä puolet tukevat kurssin Hyväksytty-suoritusta sen
+itseopiskelumuodossa.
+
+6.2 Puutteet ja strategiset kehityskohteet
+
+Huomattavia puutteita havaittiin kuitenkin Tuki- ja Organisaatiorakenteissa, jotka
+ovat kriittisiä Strategisia komponentteja MOOQ-viitekehyksessä. Koska kurssi on
+luonteeltaan täysin omatoiminen ja opettajan rooli on rajattu vain suoritusten lopulliseen tarkastukseen (hylätty/hyväksyttypäätös), tuki-infrastruktuurin puutteet
+korostuvat. Vaikka viestintäkanavat ovat olemassa, organisaatioroolit ja vastuut
+fasilitaattoreille tai tekniselle tukihenkilöstölle, sekä odotetut vastausajat, eivät ole
+nimenomaisesti määriteltyjä. Oppija joutuu ratkaisemaan ongelmansa lähes yksin, mikä heikentää oppimiskokemuksen läpinäkyvyyttä ja tukea. Lisäksi kurssikuvauksesta puuttuu tieto kurssin Arviointisuunnitelmasta, eli siitä, miten kurssin
+laatua arvioidaan järjestelmällisesti jatkuvaa parantamista varten oppijapalautteen ja datan perusteella, mikä on erityisen tärkeää itseohjautuvassa ympäristössä.
+
+6.3 Jatkuva parantaminen
+
+Kehitysehdotukset keskittyvät näiden strategisten aukkojen täyttämiseen itseohjautuvan kurssin erityisvaatimukset huomioiden:
+
+14 (17)
+Tuki-infrastruktuurin määrittely itseopiskeluun: Kurssin laadun parantamiseksi on välttämätöntä määritellä ja julkaista selkeät Organisaatioroolit (esim.
+tekninen tuki foorumilla, sisällön ylläpitäjä) ja niihin liittyvät Vastuualueet sekä
+realistiset Vastausajat (esim. "tekninen tuki vastaa 48 tunnin kuluessa"). Vaikka
+kurssi on omatoiminen, opiskelijalle on taattava jokin vähimmäistuki. Tämä parantaisi Palautejärjestelmän läpinäkyvyyttä ja antaisi turvaa "nonstop"-oppimisympäristössä.
+Jatkuvan laadunhallinnan suunnitelma: Kurssiin on lisättävä Arviointisuunnitelma (Quality Evaluation Plan). Tämän suunnitelman tulisi määritellä, miten oppijapalautetta (esim. automaattinen kurssin lopussa oleva kysely) ja oppimisdataa (esim. tehtävien suoritusasteet, hylättyjen/hyväksyttyjen suhteellinen osuus)
+käytetään kurssin sisällön ja pedagogiikan järjestelmälliseen tarkistamiseen ja
+parantamiseen (QRF:n Arviointi-vaihe). Tämä on kriittistä, koska suoraa opettajan palautetta on vähän.
+
+6.4 Johtopäätökset ja tulevaisuuden merkitys
+
+Työn tulokset vahvistavat, että Cisco on keskeinen toimija IIoT-viestinnässä, erityisesti kuilun kuromisessa IT- ja OT-ympäristöjen välillä turvallisten ja luotettavien verkkojen avulla. Kurssin ydinaiheiden – Ciscon ratkaisujen, kyberturvallisuuden ja teollisuuden Zero Trust -arkkitehtuurin käsittely on erittäin ajankohtaista ja takaa sen relevanttiuden hylätty/hyväksyttytason suorituksessa. Tulevaisuudessa Time-Sensitive Networking (TSN) ja Ultra-Reliable Wireless Backhaul
+(URWB) ovat elintärkeitä reaaliaikaisille ohjaussovelluksille. Tässä täytyy muistaa, että Ciscon tarjoama koulutus on suuri osa Moodle kurssin sisältöä. Arvio ja
+kehitys on tarkoitettu Moodle kurssille, mutta sisältö täytyy ottaa huomioon.
+Tämän työn tarkoitus on antaa eri näkökulmaa, sillä se tarjoaa kehittäjille suuntaviivat kurssin laadun systemaattiseen parantamiseen keskittyen erityisesti itseohjautuvan kurssin strategisiin komponentteihin. Näin taataan, että opiskelijat
+
+15 (17)
+saavat ajantasaista ja käytäntöön suuntautuneen käsityksen IIoT:n mahdollisuuksista ja kyberturvallisuushaasteista, samalla kun varmistetaan kurssin jatkuva
+laatu oppijoiden hyväksytty suoritusmäärän maksimoimiseksi.
+
+16 (17)
+
+Lähteet
+
+ABB. (2024). "ABB Ability Smart Grid solutions."
+Cisco Blogs. Industrial IoT. https://blogs.cisco.com/industrial-iot
+Cisco Blogs. Powering Up Security: How Cisco Helps Utilities Navigate NERC
+CIP Compliance.
+Cisco Blogs (2025): Artikkeli "Innovative OT Security Solutions by Cisco at RSAC
+2025", jossa esitellään uusia ratkaisuja OT-haavoittuvuuksien priorisoimiseksi ja
+IT/OT-datan yhdistämiseksi.
+Cyber Magazine (2025): Uutinen "Cisco Unveils New AI Cybersecurity Innovations at RSA 2025", jossa käsitellään Ciscon tekoälyyn perustuvia XDR-ratkaisuja
+kyberuhkien torjuntaan.
+Deloitte. (2024). "IIoT and the future of smart manufacturing."
+Device Authority (2025): Viittaus teollisuusohjainten kriittisiin haavoittuvuuksiin.
+Digi International (2025): Viittaus IIoT-laitteiden heikkoihin tunnistetietoihin ja
+mikrosegmentointiin ratkaisuna.
+Forbes. (2025). "IoT's Next Evolution: 5G, 6G And Smart Services."
+Gartner. (2023). "Industrial IoT vs. Consumer IoT: Key Differences and Challenges."
+IBM. (2023). "Cybersecurity for the Industrial Internet of Things (IIoT)."
+
+17 (17)
+Industrial Cyber (2024): Ciscon "State of Industrial Networking Report" -raporttiin
+viittaava uutinen, jossa korostetaan OT-turvallisuutta ja IT/OT-yhteistyötä.
+IoT Now News & Reports. Cisco and Tata Communications collaborate to usher
+in next era of eSIM and IoT connectivity. (2025, syyskuu 10).
+Koenig Solutions. The Future of Networking: How Cisco IoT is Shaping the Internet of Things.
+McKinsey & Company. (2022). "The Internet of Things: Sizing up the opportunity."
+MDPI (2022): Tieteellinen julkaisu, joka käsittelee tekoälyn roolia poikkeamien
+havaitsemisessa IIoT-ympäristöissä.
+NI - National Instruments. Time Sensitive Networking (TSN) Frequently Asked
+Questions. (2025, toukokuu 2).
+Nomios Group (2025): Artikkeli "Trends and expectations for OT security in
+2025", jossa käsitellään siirtymistä liiketoiminnan häiriöistä fyysiseen vahinkoon.
+PLANET Technology USA. How Time-Sensitive Networking (TSN) Reduces Latency in Industrial PoE Networks. (2025, elokuu 5).
+MOOQ. (2018). “Design and quality of online courses: The checklist for beginners.” Open University of the Netherlands. Retrieved from http://www.mooc-quality.eu
+Rockwell Automation (2025): Viittaus IT/OT-lähentymisen ja yhtenäisten turvallisuusvalvontakeskusten (SOC) merkitykseen.
+
+
