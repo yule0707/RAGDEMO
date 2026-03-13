@@ -1,3 +1,771 @@
+Santeri Tuominen
+
+Tukipyyntöjärjestelmän luominen
+ICT-tukipyyntöjen hallinnoimiseen
+työterveysyritykselle
+
+Metropolia Ammattikorkeakoulu
+Insinööri (AMK)
+Tieto- ja viestintätekniikka
+Insinöörityö
+24.10.2023
+
+Tiivistelmä
+Tekijä:
+Otsikko:
+Sivumäärä:
+Aika:
+
+Santeri Tuominen
+Tukipyyntöjärjestelmän luominen ICT-tukipyyntöjen hallinnoimiseen työterveysyritykselle
+40 sivua
+24.10.2023
+
+Tutkinto:
+Tutkinto-ohjelma:
+Ammatillinen pääaine:
+Ohjaajat:
+
+Insinööri (AMK)
+Tieto- ja viestintätekniikka
+Monimuotokoulutus
+Osaamisaluepäällikkö Janne Salonen
+
+Insinöörityön tavoitteena oli luoda tukipyyntöjärjestelmä Microsoftin automaatiotyökaluja käyttäen työterveysyrityksen lähituen käyttöön. Työn tarkoituksena oli luoda yhtenäinen pohja työntekijöiltä saapuville tukipyynnöille, sekä helpottaa niiden käsittelyyn
+liittyviä ongelmia.
+Työkaluna käytettiin Microsoft Forms:ia ja Lists:ia tiedon keruuseen ja varastoimiseen, sekä Microsoftin Power Automate:a ja Power Apps:ia työnkulkujen ja järjestelmän tekemiseen. Lopuksi hyödynnettiin Power BI:n raportointityökaluja luomaan
+koontinäyttö-näkymä tukipyynnöistä. Työvaiheisiin kuului järjestelmän suunnittelu,
+sen luominen ja testaaminen, sekä mahdolliset korjaukset.
+Työ alkoi pohjan luomisella Forms:iin, johon kerättiin yleisimpiä tukipyyntöjen aiheita,
+sekä tukipyynnön lähettäjän yhteystiedot ja tarkemmat tiedot ongelmasta. Forms:lla
+kysyttiin myös työntekijän toimipisteen sijaintia, sekä kuuluuko henkilö emo- vai tytäryhtiöön. Tämän vaiheen jälkeen luotiin Power Automate:lla Low Code / No Codetekniikalla tukipyyntöjä käsittelevä työnkulku, joka ohjaa pyynnöt eteenpäin Lists:iin.
+Seuraavaksi luotiin Power Apps:lla sovellus, jolla tukihenkilöt pystyivät käsittelemään
+vastaanotettuja pyyntöjä helposti ja tehokkaasti.
+Lopputuloksena saatiin luotua toimiva järjestelmä tukemaan henkilökunnan tarpeita.
+Sovelluksen avulla pystyttiin seuraamaan saapuvien tukipyyntöjen määriä, niiden
+luonnetta ja missä niitä pyydettiin. Tämän avulla voidaan tulevaisuudessa myös ennaltaehkäistä suurimpia ongelmia, parantaa niihin liittyviä opastuksia ja niiden käsittelyyn käytettäviä resursseja ja prosesseja.
+Avainsanat:
+tukipyyntö, Power Apps, Power Automate
+__________________________________________________________
+Tämän opinnäytetyön alkuperä on tarkastettu Turnitin Originality Check -ohjelmalla.
+
+Abstract
+Author:
+Title:
+Number of Pages:
+Date:
+
+Santeri Tuominen
+Creation of a support request system for handling ICTsupport requests for an occupational healthcare company
+40 pages
+24 October 2023
+
+Degree:
+Degree Programme:
+Professional Major:
+Supervisors:
+
+Bachelor of Engineering
+Information technology
+Blended learning
+Janne Salonen, Head of School (ICT)
+
+The goal of this bachelor’s thesis was to create a support request system using the
+Microsoft automation tools for the on-site support team in an occupational healthcare
+company. The aim was to create a uniform system for incoming support requests
+from employees as well as mitigate the problems regarding to their handling.
+The tools used in this thesis were Microsoft Forms and Lists to collect and store data,
+and Microsoft Power Automate and Power Apps to create workflows and the system.
+Power BI was used in the end to create a dashboard-view of the support requests.
+The work stages included planning the system, creating and testing it, as well as applying fixes as needed.
+The work began on creating a base in Forms, where typical support request topics
+were collected, as well as the email address of the request sender, and detailed information about the request. Other details were also collected with Forms, such as
+the location of the office and if the request sender belongs to the parent company or
+subsidiary. After this the next step was to create workflows with Power Automate using Low Code / No Code technology, and to forward the requests from Forms to
+Lists. Next step was to create an application using Power Apps, for which the support
+personnel can use to handle received requests easily and effectively.
+The end product was a working system to support the needs of the employees. The
+amount of support request, their nature and where they were posted could be examined and measured with the application. In the future the data can also be used to
+prevent some of the biggest problems, improve instructions and better manage the
+resources and processes required for the handling of support requests.
+Keywords:
+
+support request, Power Apps, Power Automate
+
+Sisällys
+Lyhenteet
+1
+
+Johdanto
+
+1
+
+2
+
+Microsoft-työkalut
+
+1
+
+3
+
+Lähtökohta ja tavoitteet
+
+3
+
+3.1 Historia ja ongelmat
+
+3
+
+3.2 Tavoitteet
+
+4
+
+4
+
+Suunnittelu
+
+5
+
+5
+
+Toteutus
+
+7
+
+5.1 Microsoft Forms
+
+7
+
+5.2 Microsoft Lists
+
+7
+
+5.3 Power Automate, ensimmäinen työnkulku
+
+8
+
+5.4 Power Apps
+
+9
+
+5.5 Power Automate, muut työnkulut
+
+15
+
+5.6 Power BI
+
+29
+
+5.7 Visuaalinen ilme
+
+29
+
+5.8 Lopputulos
+
+30
+
+6
+
+Kehitystarpeita
+
+36
+
+7
+
+Yhteenveto
+
+38
+
+Lähteet
+
+40
+
+1
+
+1 Johdanto
+Automatisaatio on nykypäivänä jatkuvasti kasvava ilmiö, ja tekoälyn kehittyessä
+myös automaatioprosessit paranevat. Automaatiolla saadaan merkittäviä säästöjä sekä taloudellisesti että ajankäytön suhteen. Automaattisilla järjestelmillä
+vältetään myös inhimillisten virheiden määrää ja ne ovat helposti kahdennettavissa. Näillä tekniikoilla pystytään rakentamaan tehokkaita ja helppokäyttöisiä
+järjestelmiä, jotka soveltuvat esimerkiksi erilaisten tukipyyntöjen käsittelyyn.
+Vaikka tukipyyntöjärjestelmiä on ollut olemassa jo useita vuosia eri muodoissa,
+kaikki yritykset eivät ole niitä ottanut käyttöön eriävistä syistä. Tämä insinöörityö
+tehtiin Pirte Työterveys Oy:lle, jolla ei ole lähituessa vielä vastaavaa järjestelmää ollut. Ennen tätä työtä yrityksen lähituki työskenteli pääosin sähköpostiin
+tai Microsoft Teams:iin tulleiden viestien kautta, mutta myös puhelimen välityksellä, tai paikan päällä kasvotusten. Tukipyyntöjen tilan selvittäminen ja hallinnoiminen oli hankalaa, koska ICT-tiimiin (Information and Communication Technology) kuuluu viisi henkilöä.
+Tukipyyntöjärjestelmien etuina ovat pyyntöjen yksityiskohtainen hallinta ja historia, tukipyyntökanavien yhtenäistäminen, työn priorisointi ja tehostaminen, tiimin
+sisäisen ja ulkopuolisen kommunikoinnin tehostaminen, työmäärän tehokas jakaminen sekä tukipyyntöjen tilastojen mittarointi. [1] [2] Yrityksillä on myös käytössään palvelutasosopimuksia (SLA, Service level agreement). Näillä kuvataan, kuinka palvelujen tulisi toimia palveluntarjoajan ja asiakkaan välillä. Tukipyyntöjärjestelmällä pystytään tarkastelemaan, miten hyvin tukea pystytään tarjoamaan, vaikka yrityksen lähituella ei ole varsinaista palvelutasosopimusta.
+Ennen tukipyyntöjärjestelmää lähituen ongelmina olivat esimerkiksi pyyntöjen
+keskittyminen yhdelle henkilölle, sairastumistapauksista johtuvat katkokset palveluntarjoamiseen, väärille henkilöille tulleet tukipyynnöt ja pyyntöjen hukkuminen sähköpostitulvaan. Tukipyyntöjärjestelmän avulla näiden vaikutuksia pystytään vähentämään tai poistamaan kokonaan, ja sen takia asiakastyytyväisyys
+
+2
+kasvaa. Järjestelmällä pystytään myös raportoimaan pyyntöjen lukumääriä, niiden painottumista tiettyyn aiheeseen tai toimipisteeseen, sekä mahdollisia ajankohdallisia kipupisteitä.
+Työssä hyödynnetyt työkalut ovat Microsoftin tarjoamia ohjelmistoja: Microsoft
+Forms, Lists, Power Automate, Power Apps ja Power BI. Tukipyyntöjärjestelmä
+rakennettiin näiden työkalujen avulla, koska ne olivat ennestään tuttuja, eivätkä
+vaatineet lisähankintoja. [3] Niiden käyttö on myös käyttäjäystävällistä, esimerkiksi jos toisen tukihenkilön tulisi päivittää tätä järjestelmää. Ne soveltuvat myös
+nykyiseen ympäristöön, jossa hyödynnetään Microsoftin muita palveluja, esimerkkeinä mainttakoot SharePoint ja Outlook.
+
+1
+
+2 Microsoft-työkalut
+Microsoft on kehittänyt monipuolisen Power Platform-työkaluympäristö, joka
+koostuu viidestä sovelluksesta: Power BI, Power Apps, Power Automate, Power
+Virtual Agents ja Power Pages. Tässä opinnäytetyössä on käytetty näistä kolmea ensimmäistä sovellusta.
+Power BI on datan visualisointiohjelma, jolla saadaan raakatieto käännettyä
+käyttäjäystävällisiksi kuvaajiksi ja taulukoiksi. Power Apps:lla pystytään luomaan sovelluksia käyttäen hyväksi Low-Code/No-Code-menetelmiä, eli menetelmiä, joissa koodin sijasta luodaan sovellus käyttäen graafista käyttöliittymää.
+Power Automate:lla pystytään luomaan automaattisia työnkulkuja, joilla on erilaisia laukaisimia ja toimintoja. Työnkululla tarkoitetaan tässä työssä prosessia,
+jonka Power Automate aloittaa ja vie loppuun saakka. Laukaisin on tässä yhteydessä se, mikä laukaisee (eng trigger) työnkulun, esimerkiksi napin painallus tai
+kun uusi kohde lisätään SharePoint:iin. Kohteella tarkoitetaan tässä työssä jokaista yksittäistä tukipyyntöä.
+Microsoft Forms on Microsoftin kehittämä lomaketyökalu, jolla pystyy helposti ja
+vaivattomasti luomaan kyselyitä ja mielipidemittauksia. Näistä saatua dataa
+pystyy hyödyntämään monissa muissa Microsoftin palveluissa, kuten Excel:ssä
+tai Lists:ssä.
+Microsoft Lists:llä pystytään keräämään ja organisoimaan tietoa. Ohjelmalla luodut listat ovat helppoja rakentaa, ovat joustavia ja toimivat hyvin Automate:n
+kanssa. Microsoft Lists ja SharePoint Lists ovat toiminnaltaan lähes samanlaiset, mutta Lists ei vaadi suoraan SharePoint:a toimiakseen.
+Näillä työkaluilla rakennettiin koko tukipyyntöjärjestelmä, joka koostuu Forms:lla
+luodusta tukipyyntölomakkeesta, Lists:llä luodusta tietokannasta, Automate:lla
+luoduista seitsemästä työnkulusta, sekä Apps:lla luodusta sovelluksesta.
+
+2
+Sovellus on myös mobiililaitteilla toimiva, tehden tukipyyntöihin vastaamisesta ja
+hallinnoinnista nopeata myös silloin, kun tukihenkilö ei ole koneen ääressä.
+
+3
+
+3 Lähtökohta ja tavoitteet
+Lähituelle tulevat tukipyynnöt ovat kasvaneet yrityksessä kasvusta ja laajenemisesta johtuen, mutta niihin ovat vaikuttaneet myös nykypäivän haasteet tietoturvan ja -suojan tärkeyden takia. Tukipyyntöihin lasketaan tässä työssä lähes
+kaikki mahdollinen tietotekninen avun tarve, esimerkiksi laitteiden tai ohjelmien
+toiminta, opastus niiden käyttöön tai pyyntöjen uudelleenohjaaminen palveluntarjoajille talon ulkopuolelle.
+
+3.1 Historia ja ongelmat
+Opinnäytetyön aihe kehittyi työpaikalla syntyneen tarpeen pohjalta. Ennen tukipyyntöjärjestelmää tukipyyntöjen kanssa ei ollut vastaavaa järjestelmällistä tapaa niiden käsittelyyn. Tukipyyntöjä tuli lähituelle monen eri kanavan kautta.
+Yleisin näistä oli sähköpostitse tiimin jaettuun sähköpostilaatikkoon, mutta tukipyyntöjä tuli myös tiimin jäsenten henkilökohtaisiin sähköpostilaatikoihin. Myös
+Teams:n välityksellä tuli usein pyyntöjä tiimin yhteisen tunnisteen välityksellä
+koko tiimille, tai yksityisesti viestillä. Näiden lisäksi pyyntöjä tuli myös puhelimitse, jolloin pyyntö ei tavoittanut kuin kyseisen tiimiläisen. Viimeisenä oli myös
+kasvotusten tulleet tukipyynnöt, jolloin pyytäjä tuli monitoimitilaan etsimään tukihenkilöä.
+Tästä voidaan huomata monia ongelmakohtia. Osa pyynnöistä ei saavuttanut
+koko tiimiä, ja siten hukkuivat yhden henkilön sähköpostikansioon. Osa saattoi
+myös päätyä väärälle henkilölle, aiheuttaen ylimääräistä työtä viestin selvittelyssä ja uudelleenlähetyksessä. Vanhalla tavalla ei myöskään ollut mitään lokitusta, eli vanhoihin pyyntöihin ja niiden ratkaisuihin oli vaikea päästä käsiksi.
+Varsinkaan puhelimella tai kasvotusten tulleista pyynnöistä oli mahdotonta
+saada historiatietoja. Tehdystä työstä ei ollut myöskään tarjota minkäänlaista
+mittarointia, eli ei pystytty näyttämään tiimin tekemän työn tärkeyttä eksplisiittisesti. Mittaroinnilla tarkoitetaan tiedon keruuta, järjestelyä, sekä analysointia.
+
+4
+
+3.2 Tavoitteet
+Tavoitteena oli luoda ensisijainen kanava pyyntöjen lähettämiseen ja käsittelyyn, sekä helppokäyttöinen sovellus niiden hallinnoimiseen. Työn lopussa saatiin aikaiseksi sekä tietokoneella että mobiililaitteilla toimiva sovellus, johon käyttäjä pystyy lähettämään pyynnön, ja josta tukihenkilö pystyy tarvittaessa vastaamaan ja muuttamaan viestin tilatietoa.
+Koska henkilöstön tietotekninen osaamistaso vaihtelee suuresti, pyrittiin luomaan mahdollisimman helppokäyttöinen lomakepohja ja tuoda se niin hyvin
+esille, ettei sen etsimiseen menisi henkilöstöltä aikaa. Tässä pohdittiin myös
+muita sijainteja lomakkeelle, mutta ensisijaisesti se asetettiin yrityksen SharePoint-sivulle. Muita mahdollisia sijainteja tulevaisuudessa olisi Teams ja tietokoneen työpöydälle tuotu pikakuvake, mutta näiden jakeluun jokaiselle työntekijälle liittyy ongelmia.
+Sovellus pyrittiin rakentamaan mahdollisimman automaattiseksi. Tämän vuoksi
+sovelluksen toiminnassa hyödynnettiin Power Automate:n erilaisia laukaisimia
+ja funktioita, jotta vältyttäisiin turhalta työltä. Näiden avulla pystyttiin lähettämään sähköpostia, muuttamaan pyynnön tietoja ja luomaan myös uusia pyyntöjä poistumatta sovelluksesta.
+
+5
+
+4 Suunnittelu
+Työn alussa tutkittiin, mitä sovelluksia tarvitaan, jotta saataisiin luotua käyttöön
+sopiva työkalu. Työssä päädyttiin käyttämään Microsoftin työkaluja, sillä Microsoftin Azure-pilvipalvelu on yrityksellä jo käytössä ja tämän ympärille pystyttiin
+rakentamaan helposti. Tämän toteutuksen etuna oli myös kustannusten minimointi. Kun sovellukset olivat valittuna, siirryttiin suunnitelman piirtämiseen.
+Seuraavaksi suunniteltiin uimarata-malli tukipyynnön käsittelystä, kuva 1. Kaavio on luotu laadunhallintajärjestelmä IMS:llä. Tähän kuvattiin pyynnön kulkua
+tarpeen syntymisestä sen valmistumiseen. Pyyntö tulee ensin työntekijältä, joka
+kulkeutuu työnkulkujen kautta tietokantaan, ja sieltä sovellukseen. Sovelluksesta pystytään pyyntö käsittelemään ja tarvittaessa esittämään lisäkysymyksiä.
+
+Kuva 1. Tukipyyntöjärjestelmän uimarata-malli
+Suunnitteluun liittyi myös alustavien lomakekysymysten miettimistä. Näissä kysymyksissä pyrittiin pitämään mahdollisimman nopea ja helppo pohja, mutta
+kuitenkin niin, ettei tukihenkilön tarvitse kysyä oleellisia tietoja pyynnön tekijältä.
+Oleellisten tietojen kysely hidastaa tukipyynnön käsittelyä. Aihe-kysymykseen
+valittiin useimmin ilmentyviä tukipyyntöjä historiatietojen perusteella. Otsikko ja
+viestikentät ovat yksinkertaisia, mutta tärkeitä. Näiden lisäksi tietoihin kysytään
+
+6
+myös pyynnöntekijän toimipiste ja yhtiö. Yhtiö on tässä sen takia, sillä yritys
+koostuu emoyhtiöstä ja tytäryhtiöstä, ja näiden yhtiöiden tukipyynnöistä on ollut
+toiveena saada mittarointia. Yhtiö-kentässä on myös valittavissa ”hybridi”, joka
+tarkoittaa sitä, että henkilö tekee sekä emo- että tytäryhtiölle laskuttavaa työtä.
+Toimipistekohtaiset tilastot ovat myös olleet tarpeellista tietoa tukiresurssien
+priorisoinnissa.
+Aihe-, yhtiö- ja toimipiste-kenttiin lisättiin myös Muu-vaihtoehto, mikäli vastaus
+ei sopinut mihinkään ennalta määrätyistä vaihtoehdoista. Aihe-kentässä tätä voi
+hyödyntää, mikäli pyynnön aihe ei ole mikään yleisimmistä tukipyynnön aiheista.
+Yhtiö-kentässä tämä vaihtoehto on niitä tapauksia varten, jos ei ole varma, kumpaan yhtiöön kuuluu, tai jos pyyntö on yleisluontoinen, esimerkiksi verkko-ongelmat. Toimipisteellä tätä kenttää voi käyttää tapauksissa, joissa pyynnöntekijä
+ei ole missään toimipisteellä, esimerkiksi etätöissä tai työpaikkakäynnillä.
+
+7
+
+5 Toteutus
+Suunnittelun jälkeen aloitettiin rakentamaan järjestelmää. Toteutus aloitettiin
+Forms:lla ja Lists:llä, joiden välille rakennettiin työnkulku Power Automatella.
+Seuraavaksi luotiin sovellus Power Apps:lla, jonka jälkeen rakennettiin Power
+Automatella lisää työnkulkuja erilaisten toimintojen hyödyntämiseen. Kun nämä
+saatiin toimimaan keskenään, luotiin Power BI:llä mittarointisivu erilaisiin tarpeisiin. Lopussa viimeisteltiin sovelluksen ulkoasua sopimaan yrityksen ulkoasuun.
+Lopullisesta sovelluksesta löytyy esittely ja kuvat kappaleessa 5.8, Lopputulos.
+
+5.1 Microsoft Forms
+Opinnäytetyössä hyödynnettiin suunnitteluvaiheessa kehitettyjä Forms-kyselylomakkeen kysymyksiä. Näiden avulla luotiin viisivaiheinen lomake, joka lisättiin
+yrityksen SharePoint-sivulle. Näin sen löytäminen olisi mahdollisimman helppoa
+ja nopeata työntekijöille.
+Seuraavaksi tehtiin muutamia testipyyntöjä, joilla varmistettiin lomakkeen toiminta ja pyyntöjen tallennus. Lopuksi Forms:lle jaettiin käyttöoikeudet tukitiimin
+jäsenille, jotta mahdolliset muutosehdotukset eivät olisi yhden henkilön takana.
+
+5.2 Microsoft Lists
+Kun Forms oli valmis, luotiin Lists-lista, johon Forms lähettää pyynnöt käyttäen
+Power Automaten työnkulkua. Lists:iin kerättiin aiemmin kerättyjen viiden kysymysten lisäksi viisi lisäsaraketta. Uudet sarakkeet olivat saapumispäivämäärä,
+työn alle-päivämäärä, valmistumispäivämäärä, lähettäjä sekä tilatieto.
+Saapumispäivämäärä saatiin Forms:sta automaattisesti luodusta submission
+time-arvosta. Kaksi muuta aikasaraketta jäävät tässä vaiheessa tyhjiksi. Lähettäjä saadaan automaattisesti Forms:sta. Tilatieto on uusissa tukipyynnöissä automaattisesti asetettu tilaan ”saapunut”. Muita tilatietoja on neljä kappaletta: ”luettu”, ”työn alla”, ”odottaa lisätietoja” ja ”valmis”. Lists:lle määriteltiin myös samat
+käyttöoikeudet kuin Forms:lle.
+
+8
+
+5.3 Power Automate, ensimmäinen työnkulku
+Tämän jälkeen luotiin Forms:n ja Lists:n välille työnkulku Power Automate:lla,
+kuva 2. Tämän työnkulun laukaisin laukeaa, kun Forms:lla lähetetään uusi vastaus. Toisen vaiheen aikana Automate hakee lomakkeessa kerätyt tiedot. Viimeisessä askeleessa luodaan uusi kohde, jossa käytetään lomakkeessa kerättyjä tietoja.
+Työnkulkuja luodessa valitaan kuvan 2 mukaisesti ensin lomakkeen tunnus, eli
+haetaan alasvetovalikosta haluttu lomake. Seuraavassa askeleessa haetaan
+vastauksen tiedot, johon valitaan sama valinta kuin edeltävässä kohdassa.
+Tässä lisätään vastauksen tunnus-kohtaan vastauksen yksilöivä tunnus. Tämä
+löytyy helposti, kun klikkaa kyseiseen kenttään ja hakee valittavista vaihtoehdoista ”vastauksen tunnus”. Viimeisenä luodaan itse kohde. Tässä osoitteeksi
+valitaan sivuston osoite, missä luettelo löytyy. Luettelon nimi löytyy alasvetovalikosta. Muut tiedot löytyvät kenttää klikkaamalla ja valitsemalla oikean kentän.
+
+9
+
+Kuva 2 Työnkulku Forms:n ja Lists:n välillä.
+
+5.4 Power Apps
+Seuraava vaihe oli aloittaa Power Apps:lla sovelluksen kehitys. Apps:lla luotiin
+tyhjä sovellus ja tälle luotiin yhteys tietokantaan Lists:ssä. Ensimmäisenä sovelluksen päätasoon ”App” lisättiin oheinen koodi 1, joka lisää kaksi kokoelmaa:
+
+10
+ClearCollect(KaikkiValinnatStatus;"Kaikki");;
+Collect(KaikkiValinnatStatus;Choices(Tukipyynnöt.Status));;
+ClearCollect(KaikkiValinnatToimipiste;
+"Kaikki");;
+Collect(KaikkiValinnatToimipiste; Choices(Tukipyynnöt.Toimipiste));;
+
+Esimerkkikoodi 1. Koodi, jolla luodaan kaksi kokoelmaa, joihin molempiin lisätään ”kaikki”- valinta, sekä toiseen Lists:ssä sijaitsevan alasvetovalikon Status
+sisältö ja toiseen alasvetovalikon Toimipiste sisällöt.
+Power Apps:iin voidaan rakentaa kokoelmia, joita voidaan sovelluksen sisällä
+käyttää tietolähteinä. Näitä kokoelmia hyödynnetään alasvetovalikko-tyylisissä
+suodatuksissa, joissa tarvitaan listan kohteiden lisäksi valinta kaikkiin kohteisiin.
+Seuraavaksi luotiin vaakatasoinen galleria, johon lisättiin kaikki tietokannan
+kohteet. Galleria on Power Apps:ssa löytyvä valmis pohja lista- tai luettelotyylisille kohteille. Gallerian yläpuolelle lisättiin myös otsikkokentät jokaiselle kohteen tiedolle. Galleriaan koottiin kohteen tunnus, otsikko, viesti, aihe, toimipiste,
+saapumisaika ja tilatieto.
+Näiden jälkeen lisättiin kaksi painiketta, jotka ohjaavat eri sivuille. Näitä varten
+luotiin kaksi uutta sivua, Tiedot ja LuoUusi. Toinen painike lisättiin galleriaan,
+jotta jokainen kohde saa oman painikkeensa, ja toinen painike lisättiin gallerian
+ulkopuolelle. Etusivulle lisättiin vielä kaksi alasvetovalikkoa, yksi tekstikenttä ja
+yksi valintaruutu. Nämä neljä toimivat suodattimina. Tekstikenttä määriteltiin
+niin, että sitä kautta pystyy hakemaan galleriasta kohteita, joiden ID, otsikko tai
+viestikenttä sisältävät tekstikentässä olevan merkkijonon. Alasvetovalikkoihin
+määriteltiin alussa luotujen kokoelmien mukaan tilatiedot ja toimipisteet, joiden
+avulla galleria suodattaa halutut valinnat näkymään. Valintaruutu määritettiin
+suodattamaan näkymästä kaikki kohteet, joiden tilatieto on ”valmis”.
+Aloitussivulla on piilotettuna ajastinohjausobjekti, jonka tarkoituksena on 30 sekunnin välein päivittää gallerian kohteet. Näin saadaan näkymä päivittymään
+tarpeeksi usein. Tämä päivitys ajetaan myös valintaruudun suodattimen muuttuessa. Tämä rakennettiin koodilla 2:
+
+11
+If(SuodatusValmiit.Value=false;
+ClearCollect(TempStorage;
+Filter(Tukipyynnöt;Tunnus<=2000);
+Filter(Tukipyynnöt;Tunnus<=4000 And Tunnus>=2001);
+Filter(Tukipyynnöt;Tunnus<=6000 And Tunnus>=4001 );
+Filter(Tukipyynnöt;Tunnus<=8000 And Tunnus>=6001 );
+Filter(Tukipyynnöt;Tunnus<=10000 And Tunnus>=8001 )));;
+If(SuodatusValmiit.Value=true;
+RemoveIf(ClearCollect(TempStorage;
+Filter(Tukipyynnöt;Tunnus<=2000);
+Filter(Tukipyynnöt;Tunnus<=4000 And Tunnus>=2001);
+Filter(Tukipyynnöt;Tunnus<=6000 And Tunnus>=4001 );
+Filter(Tukipyynnöt;Tunnus<=8000 And Tunnus>=6001 );
+Filter(Tukipyynnöt;Tunnus<=10000 And Tunnus>=8001 ))
+; Status.Value = "Valmis" ));;
+
+Esimerkkikoodi 2. Koodissa on ehtolause, joka tarkistaa, onko valintaruudun
+SuodatusValmiit arvo true tai false. Valintaruudun arvon mukaan se kokoaa kokoelmaan TempStorage kaikki tukipyynnöt ID-tunnuksella 1–10 000, ja jälkimmäisessä poistaa kyseisestä listasta kohteet, joiden Status on ”Valmis”.
+Huomioitavaa tässä on, että tämä koodi antaa Power Apps:n delegaatiovaroituksen. [4] Power Apps:lla tietyt funktiot aiheuttavat delegaatiovaroituksen,
+tässä tapauksessa funktio ClearCollect aiheuttaa osittaisen varoituksen. Näitä
+esiintyy usein, kun käytetään jotakin listaa lähteenä. Power Apps sallii oletusarvoisesti 500 kohteen tuomisen listaan, mutta sitä voi nostaa asetuksissa 2
+000:een. Tässä työssä tuota arvoa on keinotekoisesti nostettu luomalla sovellukseen TempStorage- kokoelma, jota käytetään toistaiseksi. Tähän kokoelmaan haetaan alkuperäisestä tietokannasta ensimmäiset 2 000 kohdetta, sitten
+lisätään kohteet 2 001–4 000, 4 001–6 000, 6 001–8 000 ja 8 001–10 000.
+[lähde delegaatioon]
+Seuraavalle sivulle, Tiedot, pääsee kohteen perässä olevasta nuolipainikkeesta. Tällä sivulla tukihenkilö pääsee tarkastelemaan tukipyynnön kaikkia tietoja. Vasemmassa laidassa näkyy ensin otsikko, jonka alta löytyy viesti-kenttä.
+Viesti-kentän alla on vastauskenttä, jonka avulla tukihenkilö pystyy suoraan kirjoittamaan pyynnön tekijälle viestiä. Lähetys-painike vielä laukaisee työnkulun,
+jolla viesti lähtee sähköpostitse, ja sen jälkeen lisää uuden viestin tämän kohteen viestikenttään. Vastaa viestiin-painikkeessa on koodi 3:
+
+12
+UpdateContext({näytäLataus: true});;
+Set(varViesti; 'Vastauslaatikko - Tiedot');;
+Tukipyyntövastaus.Run(
+ThisItem.Tunnus;
+varViesti);;
+Set(varStartTimer; true);;
+Reset('Vastauslaatikko - Tiedot');;
+
+Esimerkkikoodi 3. Koodi aktivoi Lataus-näkymän, asettaa muuttujan varViesti
+arvoksi vastauslaatikon sisällön ja suorittaa Tukipyyntövastaus-työnkulun antaen työnkululle arvoiksi tukipyynnön tunnuksen ja varViestin. Tämän jälkeen
+aktivoituu varStartTimer-muuttuja, jonka tehtävänä on päivittää näkymän tiedot,
+ja lopuksi palautetaan vastauslaatikkoon oletusarvot.
+Keskellä sivua löytyy perustiedot listattuna. Oikeasta laidasta löytyy painikkeet
+tilatiedon muuttamiseen. Oletusasetuksena kohteille tässä on ”saapunut”. ”Luettu”-tilassa ei ole taustalla kovin paljon erikoisuuksia, mutta jos kohteella on
+”otettu työn alle- aika” tai ”valmistumisaika” kentissä ajankohdat, ne nollaantuvat. ”Ota työn alle”-painike lähettää pyynnön tekijälle automaattisen viestin,
+jossa pyydetään tarvittaessa vastaamaan kyseiseen viestiin, jotta työnkulku
+osaa hallinnoida tukipyyntöä oikein. Tämä myös lisää kohteelle ”otettu työn
+alle”-kohtaan UtcNow()-komennolla nykyisen ajan. ”Odottaa lisätietoja” lisää
+myös ajan ”otettu työn alle”-kohtaan samalla tavalla, mutta ei lähetä automaattisesti viestiä, vaan lisätietopyynnöt pitää vasemman laidan vastauskentässä lähettää pyytäjälle. ”Valmis”-painike lähettää pyytäjälle viestin pyynnön valmistumisesta, sekä lisää ”valmistumisajan” pyynnölle. Kun tilatietona on ”valmis”,
+myös vasemman laidan vastauskenttä deaktivoituu, eli sillä ei pystytä vastaamaan. Painikkeissa käytetty koodi 4 on lähes sama, ainoastaan tilavalinta-muuttujan arvo on eri:
+Set(Tilavalinta; "[tilatieto tähän]");;
+Set(TilaTunnus; ThisItem.Tunnus);;
+Set(TilaTyönallepv; ThisItem.'Käsittely-ottoaika');;
+Set(TilaValmispv; ThisItem.Valmistumisaika);;
+UpdateContext({showPopup:true});;
+
+Esimerkkikoodi 4. Tilavalinta valitsee valitun painikkeen mukaan arvon tähän
+kenttään, muut muuttujat koodi hakee tukipyynnön tiedoista. Lopuksi avataan
+PopUp-näkymä.
+Vastauskentässä on koodi 5:
+
+13
+Switch(ThisItem.Status.Value;
+"Saapunut";DisplayMode.Edit;
+"Luettu";DisplayMode.Edit;
+"Työn alla";DisplayMode.Edit;
+"Odottaa lisätietoja";DisplayMode.Edit;
+"Valmis"; DisplayMode.Disabled)
+
+Esimerkkikoodi 5. Vastauskenttä on tilatiedosta riippuen muokattavissa, tässä
+”Valmis”-tilatieto deaktivoi vastauskentän.
+Mikäli on manuaaliselle vastaukselle tarvetta, pitää tilatieto muuttaa joksikin
+muuksi. Kaikki tilatietopainikkeet myös avaavat PopUp-ruudun näkyviin, missä
+varmistetaan tilatiedon vaihto. Mikäli tämän hyväksyy, aukeaa pieni latausruutu,
+johon on määritelty kolmen sekunnin viive. Tämä on luotu sen takia, että tilatietoa ei pääse liian nopeasti muuttamaan, ennen kuin päivitys on ehtinyt tietokantaan asti. Jos tilatietoa vaihtaa tässä liian nopeasti, sovellus saattaisi ilmoittaa
+virheestä ja vaatia uudelleenkäynnistystä. Tässä tilatiedon muuttuessa ”Työn
+alla” tai ”Valmis”, tämä myös laukaisee työnkulut, joissa lähetetään pyynnön tekijälle sähköpostia pyynnön tilanteesta. Tässä on myös päivitysmuuttuja varStartTimer, jonka avulla tämän sivun tiedot saadaan päivittymään edellä mainitun
+kolmen sekunnin aikana. PopUp-ikkunassa olevan ”Ei”-painikkeen koodi 6 on:
+UpdateContext({showPopup:false})
+
+Esimerkkikoodi 6. Poistaa PopUp-näkymän ruudusta.
+”Kyllä”-painikkeen koodi 7 on:
+UpdateContext({näytäLataus: true});;
+Patch(Tukipyynnöt; 'Galleria - Tiedot'.Selected; {Status:{Value:Tilavalinta}});;
+If(Tilavalinta="Työn alla";TukipyynnönStatusmuutos.Run('Galleria Tiedot'.Selected.Tunnus;
+Tilavalinta));;
+If(Tilavalinta="Valmis";TukipyynnönStatusmuutos.Run('Galleria - Tiedot'.Selected.Tunnus;
+Tilavalinta));;
+Tukipyynnönpäivitys.Run(TilaTunnus; Tilavalinta; TilaValmispv;TilaTyönallepv);;
+Set(varStartTimer; true);;
+UpdateContext({showPopup:false})
+
+Esimerkkikoodi 7. Koodi luo Lataus-näkymän, jonka jälkeen se päivittää tietokantaan tukipyynnön tiedot. Tässä hyödynnetään koodi 4:ssa valmisteltuja
+muuttujia. Jos tilatiedon arvo on ”Työn alla” tai ”Valmis”, koodi laukaisee TukipyynnönStatusmuutos-työnkulun. Tämän jälkeen laukaistaan Tukipyynnönpäivitys-työnkulku tukipyynnön arvoilla. Lopussa päivitetään näkymän tiedot
+
+14
+varStartTimer-muuttujan avulla kuten koodi 3:ssa, ja sen jälkeen poistetaan PopUp-näkymä ruudusta.
+Tämän sivun päivitysajastimessa on seuraava koodi 8:
+Refresh(Tukipyynnöt);;
+UpdateContext({näytäLataus: false});;
+Set(varStartTimer;false);;
+
+Esimerkkikoodi 8. Koodi päivittää tietokannasta tulevat tiedot, poistaa Latausnäkymän ruudusta ja asettaa varStartTimer-muuttujan arvon.
+Kolmas sivu on LuoUusi, jota pystyy tukihenkilö käyttämään. Jos tukihenkilö saa
+tukipyynnön esimerkiksi puhelimen välityksellä, tulee pyyntö saada kirjattua tietokantaan, ja tätä kautta sen saa helposti määriteltyä oikein. Tämä sivu kysyy
+samat asiat kuin Forms-lomake, mutta sisältää myös uuden kentän, ”lähettäjä”.
+Tähän tukihenkilö kirjoittaa tukipyynnön tehneen käyttäjän sähköpostiosoitteen,
+sillä sitä ei pysty näissä tapauksissa keräämään automaattisesti. Sivulla on
+kaksi painiketta, joista ”lähetä” laukaisee työnkulun, jossa luodaan uusi kohde
+tietokantaan. Toinen painike on ”tyhjennä”. Tässä lomakkeessa, kuten Formslomakkeessakin, jokainen kenttä on pakollinen, ettei tietokantaan kertyisi vajaita
+kohteita. Uusi lomake tehdään seuraavalla koodilla 9:
+UusiTukipyyntö.Run('Otsikko - LuoUusi';
+'Viesti - LuoUusi';
+'Lähettäjä - LuoUusi';
+'Aihe - LuoUusi'.Selected.Value;
+'Status - LuoUusi'.Selected.Value;
+'Yhtiö - LuoUusi'.Selected.Value;
+'Toimipiste - LuoUusi'.Selected.Value);;
+ResetForm('Tukipyyntö - LuoUusi')
+
+Esimerkkikoodi 9. Tällä laukaistaan työnkulku UusiTukipyyntö, ja sen arvoiksi
+annetaan sivun lomakekentissä olevat arvot. Lopuksi lomakekenttien arvot palautetaan oletusarvoiksi.
+Tämän sivun lomakekentissä, joissa valinta on alasvetovalikossa, käytettiin
+koodia 10:
+Choices([@Tukipyynnöt].Aihe)
+Choices([@Tukipyynnöt].Status)
+Choices([@Tukipyynnöt].Yhtiö)
+Choices([@Tukipyynnöt].Toimipiste)
+
+Esimerkkikoodi 10.
+Näillä haetaan tietokannasta löytyvien alasvetovalikkojen arvot lomakekenttiin.
+
+15
+
+5.5 Power Automate, muut työnkulut
+Kun sovellus oli toiminnallisuudeltaan valmis, luotiin kuusi uutta työnkulkua Power Automate:lla. Ensimmäinen näistä oli ”Tukipyynnön Status Muutos”, jonka
+tehtävä oli lähettää tukipyynnön tekijälle viestiä, jos pyynnön tilatieto muuttui.
+Tässä ensimmäisenä haettiin sovelluksesta syntyneet syötteet, ID ja Status.
+ID:n avulla haettiin tietokannasta kyseessä oleva tukipyyntö, jonka jälkeen alustettiin kolme merkkijono-muuttujaa. Ensimmäinen näistä oli kyseisen tukipyynnön viestihistoria, toinen oli rivinvaihto ja kolmas muuttuja haki ensimmäisestä
+muuttujasta kaikki rivinvaihdot käyttäen arvona toista muuttujaa, ja sen jälkeen
+korvasi nämä rivinvaihdot merkkijonolla ”<br>”. Tämä vaihe oli tehtävä, sillä
+Lists:stä haettu viesti ei ole samalla merkkikoodilla mitä Outlook käyttää. Viestin
+rivinvaihdot ilman tätä prosessia olisivat Outlookissa kadonneet, jolloin viesti
+olisi erittäin vaikealukuinen. Lists ei taas tue HTML-koodia, joten sinne tallennetut viestit olisivat jättäneet viestiin ”<br>” aina rivinvaihdossa. Viimeisenä askeleena tässä työnkulussa oli kaksi ehtolauseketta. Mikäli tukipyynnön tilatiedoksi
+on muutettu ”valmis”, työnkulku lähettäisi pyynnön tekijälle automaattivastauksen, jossa kerrottiin pyynnön olevan valmis. Toinen ehtolause toimii samalla periaatteella, mutta ehtolauseessa ”valmiin” tilalla oli ”työn alla” ja sähköpostiviestissä siten kerrotaan, että tukipyyntö on otettu työn alle. Tässä myös kehotettiin
+pyynnön tekijää vastaamaan suoraan tähän viestiin, mikäli asiasta tulee kysyttävää tai lisätietoja. Työnkulusta löytyy malli kuvista 3, 4 ja 5.
+
+16
+
+Kuva 3 Ensimmäinen osa työnkulusta.
+
+Kuva 4 Toinen osa työnkulusta.
+
+17
+Alusta muuttuja 3:ssä oli seuraava koodi 11:
+replace(variables('Multiriviviesti'),variables('Entteri'),'<br>')
+
+Kuva 5 Viimeinen osa työnkulusta.
+Seuraava työnkulku oli “käyttäjän vastaus tukipyyntöön”, jossa hyödynnettiin
+automaattisessa viestissä luotua otsikkoa. Tässä otsikossa käytettiin tukipyynnön ID:tä, joka tässä toimii myös viestien tunnuksina. Jos pyynnön tekijä vastaa
+saamaansa viestiin, työnkulku parsii jaettuun sähköpostikansioon saapuneen
+postin otsikosta kyseisen tunnuksen, hakee sen perusteella Lists:stä tukipyynnön, formatoi saapuneen sähköpostiviestin viestikentän HTML-muodosta tekstiksi, siistii tästä vastauksesta mahdolliset aiemmat viestit, sekä päivittää lopulta
+tukipyynnön viestikentän Lists:iin käyttäen siistittyä viestiä, muutamaa rivinvaihtoa, sekä aiempaa viestiä. Näin saadaan siisti viesti lisättyä tukipyynnön viestihistoriaan. Tästä työnkulusta löytyy malli kuvista 6, 7 ja 8.
+
+18
+
+Kuva 6 Ensimmäinen osa työnkulusta.
+Laadi ja Laadi ID sisältävät koodit 12–13:
+last(split(variables('Otsikko'),'['))
+first(split(outputs('Laadi'),']'))
+
+19
+
+Kuva 7 Toinen osa työnkulusta.
+Poista vanhat viestit uudesta vastauksesta-kenttä sisältää koodin 14:
+first(split(outputs('Html_to_text')?['body'],'Lähettäjä: '))
+
+Kuva 8 Viimeinen osa työnkulusta.
+
+20
+Seuraava työnkulku oli ”Kun kohde luodaan -> Send Push Notification V2”, josta
+malli on kuvassa 9. Tämän työnkulun tehtävänä on lähettää tukihenkilöille puhelimeen ilmoitus, kun uusi tukipyyntö saapuu. Tätä varten tukihenkilön oli ladattava puhelimeen Power Apps-sovellus ja kirjautua sinne yrityksen tunnuksilla. Tämän jälkeen puhelimeen pystyi lähettämään ilmoituksia pyynnöistä.
+Apps:n asetuksissa valittiin kohtaan ”Open App” valinta ”Ei”, sillä huomattiin,
+että jos sovellus avautuu tätä kautta suoraan, Power Apps avaa sovelluksen
+portrait-orientaatiossa, vaikka sovelluksen asetuksissa on lukittu landscapeorientaatio.
+
+Kuva 9 Työnkulun malli.
+
+21
+Viides työnkulku oli ”Tukipyynnön päivitys”. Tämä työnkulku koostui useasta
+Ehto-noodista, joiden tehtävänä on päivittää tukipyynnön Tiedot-sivulla olevat
+aikakentät. Työnkulku laukaistaan sovelluksen Tiedot-sivulta, kun tilatietoa
+muutetaan. Työnkulku hakee Power Apps:lta neljä arvoa: tunnus, status, valmistumisaika ja käsittelyaika. Näitä hyödyntäen se hakee tilatiedon, eli statuksen, mukaan nykyisen tilatiedon ja mikäli pyynnöllä on tietyt arvot aikakentissä,
+se joko päivittää nykyisen ajan UtcNow()-komennolla, tai poistaa ajan Null-komennolla. Esimerkiksi jos tilatieto on ”saapunut”, ja jos pyynnöllä on joko valmistumisaika tai käsittelyaika jokin muu kuin tyhjä, se päivittää uusiksi tiedoiksi
+näihin aika-arvoihin Null. Näin tukipyynnön tiedot pysyvät ajan tasalla. Työnkulun malli löytyy kuvista 10, 11, 12, 13, 14 ja 15.
+
+Kuva 10 Työnkulun alkuosa.
+
+22
+
+Kuva 11 Työnkulun toinen osa.
+
+Kuva 12 Työnkulun kolmas osa.
+
+23
+
+Kuva 13 Työnkulun neljäs osa.
+
+Kuva 14 Työnkulun viides osa.
+
+24
+
+Kuva 15 Työnkulun viimeinen osa.
+Kuudentena työnkulkuna oli ”Uusi Tukipyyntö”, esitetty kuvassa 16. Tämän
+työnkulun laukaisimena toimii LuoUusi-sivulla oleva Lähetä-painike. Tämä hakee kyseisellä sivulla olevien lomakekenttien tiedot ja niiden perusteella luo
+Lists:iin uuden kohteen. Ainoa arvo, mitä ei lomakkeesta tuoda, on saapumisaika. Siinä käytetään UtcNow()-komentoa.
+
+25
+
+Kuva 16 Työnkulun malli.
+Viimeisenä työnkulkuna oli ”Tukipyyntövastaus” jonka malli on kuvissa 17, 18 ja
+19. Tämän laukaisin sijaitsee Tiedot-sivulla Lähetä-painikkeessa. Kun uusi
+viesti lähetetään tämän painikkeen kautta, Power Apps lähettää työnkululle kyseisen tukipyynnön tunnuksen, jonka avulla haetaan tietokannasta oikea tukipyyntö, alustetaan kolme muuttujaa, samalla periaatteella kuin ”Tukipyynnön
+Status
+
+Muutos”-työnkulussa.
+
+Tämän
+
+jälkeen
+
+lähetetään
+
+jaetusta
+
+26
+sähköpostiosoitteesta viesti pyynnön tekijälle, luodaan asianmukainen otsikko
+viestille, sekä aiemmin luodun muuttujan pohjalta viesti.
+
+Kuva 17 Työnkulun alkuvaihe.
+
+27
+
+Kuva 18 Työnkulun seuraava vaihe.
+Alusta muuttuja 3 ja Alusta muuttuja 5 sisältävät seuraavat koodit 15 ja 16:
+replace(variables('Multiriviteksti'),variables('Entteri'),'<br>')
+replace(variables('UusiViesti'),variables('Entteri'),'<br>')
+
+28
+
+Kuva 19 Työnkulun viimeinen vaihe.
+Alusta muuttuja sisältää koodin 17:
+replace(variables('UusiViesti'),'<br>',variables('Entteri'))
+
+29
+
+5.6 Power BI
+Kun työnkulut ja sovellus olivat toimintakunnossa, tehtiin työhön vielä Power
+BI:n avulla sopivaa mittarointinäkymää. Tässä hyödynnettiin Power BI:n automaattista näkymänluontia, jota sitten muokattiin tarpeiden mukaan sopivaksi.
+Näkymässä on viisi kuvaajaa ja neljä pikalaskuria. Kuukausittain-näkymässä on
+myös porautumismahdollisuus päivätasolle, eli nähdään tukipyyntöjen lukumäärä kuukausitason sijaan päivittäin. Koontinäytöstä löytyy malli kuvasta 20.
+
+Kuva 20 Koontinäyttö-malli.
+
+5.7 Visuaalinen ilme
+Kun näiden kaikkien toiminnallisuus oli testattu perusteellisesti, luotiin vielä sovelluksen ja raportoinnin koontinäytölle yrityksen mukainen visuaalinen ilme.
+Tässä käytettiin mahdollisuuksien mukaan viestintätiimin tekemän graafisen ohjeiston värejä, logoja ja fontteja. Tässä pyrittiin ottamaan huomioon myös saavutettavuutta, varsinkin värien suhteen. Koontinäytössä kahdessa kuvaajassa
+oli värien kanssa haastavaa saada sopivat värit ottaen erilaiset saavutettavuusasiat huomioon, mutta värit eivät pylväskuvaajissa onneksi ole kovin hankalia
+
+30
+hahmottaa. Tekstifonttien kanssa päädyttiin käyttämään yhtä fonttia, sillä Power
+Apps ei oletusarvoisesti sisällä kuin 14 erilaista fonttia, joista valittiin Segoe UI.
+
+5.8 Lopputulos
+Työstä saatiin toimiva järjestelmä, jossa on pyritty pitämään sekä käyttö, että
+päivittäminen mahdollisimman helppona. Etusivulla on neljä suodatinta, joiden
+avulla voidaan suodattaa monipuolisesti tukipyyntöjä. Kuvissa 21, 22 ja 23 on
+esitelty aloitussivua.
+
+Kuva 21 Aloitussivu ilman suodattimia.
+
+Kuva 22 Aloitussivu, kun suodattimia on käytössä.
+
+31
+
+Kuva 23 Aloitussivu, kun suodatetaan ”valmiit”.
+Tiedot-sivulla pääsee tukihenkilö kahdella painalluksella päivittämään tukipyynnön tilatiedon. Pyyntöön vastaaminen toimii yksinkertaisesti, sekä päivittyy viestihistoriaan automaattisesti. Tiedot-sivua on esitelty kuvissa 24, 25, 26 ja 27.
+
+Kuva 24 Tiedot-sivun perusnäkymä.
+
+32
+
+Kuva 25 Kun sivun kautta on lähetetty viesti, se päivittyy viestihistoriaan.
+
+Kuva 26 Tilatiedon päivityksen PopUp-ikkuna. Kun PopUp-ikkuna on päällä, se
+estää muiden elementtien klikkaamisen.
+
+33
+
+Kuva 27 Tilatieto ja pyynnön aika-tiedot päivittyneet.
+Kolmannella sivulla, LuoUusi, pääsee tukihenkilö tekemään uuden pyynnön,
+joka päivittyy tietokantaan heti. Tätä sivua on esitelty kuvassa 28.
+
+Kuva 28 LuoUusi-sivun oletusnäkymä.
+Mobiilisovelluksena tukipyyntöjärjestelmä toimii myös ilman suurempia ongelmia.
+Sovellus on testattu Teams:n ja Power Apps:n kautta, ja landscape-orientaatiolla
+näkymä on lähes samanlainen kuin tietokoneella. Kuvissa 29, 30, 31 ja 32 on
+esitelty mobiilinäkymää sovellukselle.
+
+34
+
+Kuva 29 Teams-näkymä landscape-orientaatiossa.
+
+Kuva 30 Power Apps- näkymä Aloitussivusta landscape-orientaatiossa.
+
+35
+
+Kuva 31 Power Apps- näkymä Tiedot-sivusta landscape-orientaatiossa.
+
+Kuva 32 Power Apps- näkymä LuoUusi-sivusta landscape-orientaatiossa.
+
+36
+
+6 Kehitystarpeita
+Tukipyyntösovellusta on ehditty yrityksessä testaamaan odotettua vähemmän
+erinäisien syitten takia. Sovellusta ollaan ottamassa laajemmin käyttöön kuluvan
+vuoden aikana. Toiminnallisuudessa ei ole havaittu mitään häiriöitä, mutta joitakin kehitystarpeita on tullut esille.
+Nykymuodossaan kohteiden kolme ajankohtaa eivät siirry oikein Power BI:hin.
+Vaikka päivämäärä ja aika ovat tietokannassa ja sovelluksessa oikein, Power BI
+lukee tästä pelkän päivämäärän. Tämän korjauksen jälkeen pystyttäisiin seuraamaan tukipyyntöjen käsittelyaikoja.
+Tällä hetkellä mobiilisovellus on rakennettu vain landscape-orientaatiossa, mutta
+tätä voitaisiin parantaa niin, että se toimisi myös portrait-orientaatiossa. Kuvissa
+33 ja 34 on esitelty Teamsissa näkymää, miltä sovellus näyttää portrait-orientaatiossa.
+Jatkokehityksenä olisi myös tuoda Forms-lomake paremmin työntekijöiden tavoitettavaksi. Esimerkiksi Teamsin kautta pystyisi saamaan saman lomakkeen, tai
+työntekijöiden puhelimeen voitaisiin asentaa Forms. Näissä kuitenkin isoin ongelma on saada työntekijät oppimaan uudet käytänteet.
+Selaimeen olisi myös hyvä saada näkyvä ilmoitus, kun uusia viestejä tulee, tai
+kun viesteihin on tullut uusia vastauksia. Tässä pystyisi hyödyntämään sivulla
+olevaa ajastinta, johon lisättäisiin ehtolause. Tämä ei toiminnallisuuteen vaikuta
+suuresti, niin se ei ole kehityslistalla ensimmäisten korjausten kanssa.
+Tärkeimpänä kehitysideana kuitenkin olisi saada sovellukseen liitteiden lisäys valinnaisena ominaisuutena. Tässä kuitenkin tulee ottaa huomioon mahdolliset tietosuojaongelmat. Jos liitteinä lähetetään kuvia tai dokumentteja, ne saattavat sisältää henkilötietoja, jolloin niiden säilytys tulee vaatimaan enemmän tarkastelua.
+Yleisin tapa liitteiden säilöntään vastaavanlaisissa järjestelmissä on OneDrive tai
+SharePoint.
+
+37
+
+Kuva 33 Teams-näkymä portrait-orientaatiossa.
+
+Kuva 34 Teams- näkymä, kun sovelluksen avaa portrait-orientaatiossa ja sen jälkeen kääntää landscape-orientaatioon.
+
+38
+
+7 Yhteenveto
+Insinöörityön aiheena oli rakentaa toimiva ja helppokäyttöinen tukipyyntöjärjestelmä yrityksen ICT-tiimille.
+Työn alussa tutkittiin vaihtoehtoja järjestelmän luontiin. Tässä päädyttiin käyttämään Microsoftin työkaluja, koska osa niistä oli tuttuja ja yrityksellä on käytössä
+Microsoftin Azure-pilvipalvelut. Seuraavaksi luotiin suunnitelma, miten tukipyyntö saapuu ja miten se käsitellään järjestelmällä. Tämän kuvaamiseen luotiin IMS-laadunhallintajärjestelmällä uimaratakaavio. Lopuksi suunniteltiin tukipyyntölomakkeeseen tarvittavat tiedot, mitä tukipyynnön tekijältä kysytään.
+Toteutusvaiheen alussa luotiin Microsoft Forms:lla lomake, jonka avulla kerättiin
+tukipyynnön tekijältä tietoja tukipyynnöstä. Tiedot kerättiin Microsoft Lists:iin luotuun luetteloon. Tietojen siirtämisessä ja kohteen luomisessa käytettiin hyväksi
+Power Automate:n työnkulkua.
+Seuraava vaihe oli luoda sovellus, jota ICT-tiimi hyödyntää tukipyyntöjen käsittelyssä. Tässä käytettiin sovellusluontityökalua Power Apps, johon luotiin kolme
+sivua: Aloitus, Tiedot ja LuoUusi. Aloitus-sivulla oli luettelomuodossa kaikki tukipyynnöt, joiden tiedoista valittiin oleellisimmat näkymään tällä sivulla. Luettelon
+perässä oli painike, josta päästiin Tiedot-sivulle, jossa pääsi tarkemmin tarkastelemaan tukipyyntöä, sekä vastaamaan ja muuttamaan tukipyynnön tilatietoa.
+Aloitus-sivulla oli myös painike, joka ohjasi tukihenkilön LuoUusi-sivulle. Tällä
+sivulla tukihenkilö pystyi luomaan uutta tukipyyntöä. Tämä oli luotu niitä tapauksia varten, jos tukipyynnön tekijällä ei olisi pääsyä lomakkeeseen ja sen vuoksi
+tulee tukihenkilön luokse tai soittaa tukihenkilölle.
+Sovelluksen luonnin jälkeen rakennettiin Power Automatella kuusi muuta työnkulkua erilaisiin tarpeisiin. Näihin kuului vastauksen lähettäminen sovelluksesta,
+pyynnön tekijän vastauksen hakeminen jaetusta sähköpostista ja lisääminen tukipyyntöön, uuden tukipyynnön luominen sovelluksesta ja uuden kohteen
+
+39
+lisääminen luetteloon, tukipyynnön aika-tietojen päivitys luetteloon, tukipyynnön
+tilatiedon muutos luetteloon ja viimeisenä Push-ilmoituksen lähettäminen tukihenkilöiden puhelimeen uuden tukipyynnön saapuessa.
+Kun sovellus ja sen työnkulut oli saatu toimimaan, luotiin Power BI-työkalulla
+mittarointiin tarkoitettu koontinäyttö-näkymä. Tällä pystyttiin tarkkailemaan tukipyyntöjen lukumääriä, minkälaiset tukipyynnöt olivat yleisimpiä ja mistä toimipisteiltä tulee eniten pyyntöjä. Näiden lukujen perusteella pystytään tulevaisuudessa parantamaan ohjeita, opastusta ja laitteita, parantaen siten asiakastyytyväisyyttä ja helpottaen työkuormaa muulta henkilökunnalta.
+Lopuksi järjestelmä otettiin käyttöön ja henkilökuntaa informoitiin viikkoinfon
+kautta sen käytöstä. Järjestelmästä tullaan kertomaan myös tulevaisuudessa,
+jotta se saataisiin laajempaan käyttöön.
+Kun toteutus oli valmis ja järjestelmä oli otettu käyttöön, pohdittiin siihen liittyviä
+kehitysideoita ja korjauksia. ICT-tiimiltä saatu palaute oli positiivista käytön helppouden ja toimivuuden puolesta. Näiden lisäksi saatiin kuulla, että vastaavaa
+sovellusta kaivattaisiin toisellekin tiimille huonetilojen korjauspyyntöjen hallintaan.
+
+40
+
+Lähteet
+1
+
+What Are the Benefits of Using a Customer Support Ticketing System?
+https://live.asseco.com/blog/benefits-of-customer-support-ticketing-system/
+
+2
+
+How Organizations Benefit from Embracing a Ticketing management System
+https://www.itarian.com/ticketing-system/benefits-of-ticketing-system.php
+
+3
+
+Power Platform licensing FAQs
+https://learn.microsoft.com/en-us/power-platform/admin/powerapps-flowlicensing-faq
+
+4
+
+SharePoint Delegation Cheat Sheet For Power Apps
+https://www.matthewdevaney.com/sharepoint-delegation-cheat-sheet-forpower-apps/
+
+
 Leo Huovinen
 
 Chattibottien tukemat
