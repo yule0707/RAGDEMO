@@ -1,0 +1,305 @@
+1. Who is the Data Controller?
+The controller of the processing of personal data described in this notice is
+
+ 	
+For customers located in Finland
+Holiday Club Resorts Oy (“Holiday Club”)
+Konepajankuja 5 C
+00510 Helsinki
+Business ID: 2033337-1
+
+Holiday Club acts as the Data Controller, and companies owned by it (directly or indirectly) may process personal data on behalf of Holiday Club. We process strictly limited information in the customer register, which we use to provide benefits and services.
+
+If you have any questions regarding this privacy notice, you may contact us by email at tietosuoja@holidayclub.fi.
+
+If you visit our website, communicate with us, or otherwise interact with us on social media such as Facebook, Instagram or other platforms, please review the relevant privacy notice of such social media services. You should be aware that in some cases we may act as Joint Controllers together with such social media platforms.
+
+If you purchase a share from us through financing, we only act as an intermediary of the financing, and your data will be transmitted to the bank providing the financing. In such cases, the bank acts as the Data Controller and you can find more information about the processing of your personal data in the bank’s own privacy notices.
+
+2. What Data Do We Collect and How?
+Below we explain what categories of personal data we may collect about you and how this collection takes place. In section three (3) of this notice, you will find a chart where we have specified the purposes of processing your personal data as well as the legal basis for such processing.
+
+We may collect, use, retain and transfer different kinds of personal data, which we have grouped as follows:
+
+Identification Data means name, date of birth, gender, nationality and personal identity number, or a customer or member ID number.
+Contact Data means email address, telephone number and postal address.
+Shareholder Data means information on owned shares as well as past ownership and the date of purchase, the share apartment, the date of issuance of the share certificate, possible restrictions related to rights of possession, and other information required by law, such as proof of payment of transfer tax. Some of this data may also be processed on behalf of housing companies in the capacity of a data processor.
+Additional Shareholder Data means information from share purchase agreements, other documentation or information related to share transactions, such as the date of purchase, usage information of the owned apartment (rental, own use, exchange or other), guardianship or trusteeship information, information on occupation and employment, duration and nature of employment, household composition and number of family members, income and wealth, information on invoices and payments of rent, purchase price and other contractual payments, marital status, restrictions on disclosure of information, contents of the purchase agreement, rental brokerage or operator agreement, payments of rent and other contractual charges or purchase price, marketing segmentation data, other possible contact details (contact person), as well as other information submitted by the customer. Some of this data may also be processed on behalf of housing companies.
+Call Data means recordings of telephone conversations you have had with us. Call data also includes information about when the call took place, which customer service agent answered, the number dialed, and the number from which the call originated.
+Health Data means information possibly collected in connection with treatments offered by Holiday Club, mainly massage services, such as information on your previous conditions and the conditions the treatment is intended to address. External practitioners also collect Health Data when providing such services.
+Traveller Data means information collected from guests staying at our hotels, as set out in Section 6 of the Accommodation and Catering Act, including the following: traveller’s full name and Finnish personal identity code or, in its absence, date of birth and nationality; full names and Finnish personal identity codes (or, if not available, dates of birth) of the accompanying spouse and minor children; traveller’s address; country of arrival; traveller’s travel document number; as well as date of arrival and departure from the accommodation establishment, if known.
+Transaction Data means services you have purchased from us and details of contracts concluded, payments we have made to you, and payments you have made to us.
+Profile Data means information on your purchases, interests, preferences, feedback and survey responses, your preferred service language, prohibitions of direct marketing, participation in competitions, activity on our website, as well as demographic data.
+Technical Data means your IP address, login data, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform, and other technical devices you use to access our website.
+Usage Data means information on how you interact with our website, products and services. For example, the referring page, time and pages visited, clicks, and how you respond to our communications.
+Marketing and Communication Data means your preferences regarding receiving marketing from us and our partners, your communication preferences and marketing segmentation data.
+CCTV Data means information collected through video surveillance in our premises.
+Credit Data means your personal credit information, collected when payment is made by invoice or when we offer you financing for share transactions. This data may also be collected for the bank’s financing decision, in which case the bank acts as the controller, or on behalf of the housing company in the capacity of a processor.
+Key Card Data means information on when certain premises were accessed with a specific key card.
+Typically, data is collected directly from you when you use our website, purchase or consider purchasing our services, request marketing from us, or otherwise contact us. We may also collect, update or enrich your data based on information from authorities and companies providing personal data services (for example, Posti), through cookies on our website, or by asking you directly. We may acquire enrichment services from an external provider. Through this enrichment service, personal data is linked to Holiday Club customer data by the provider, enabling more accurate targeting of direct marketing campaigns. This service may be used, for example, for telephone marketing or direct mail. The personal data used in enrichment services may include age, gender, language, residential area, household size, life stage and education. This additional data does not become part of Holiday Club’s customer register, but remains in the provider’s register. Holiday Club may transfer personal data to a processor for the purpose of providing this service. To the extent permitted by law, Holiday Club may also use the enriched data as part of its own customer register.
+
+When you use our website or services, we may automatically collect Technical Data and Usage Data from your devices, browsing and usage behavior for statistical monitoring of service usage and for measuring the effectiveness of advertising. We collect such information using cookies and other similar technologies. You can read more about our use of cookies in our Cookie Notice.
+
+3. Purposes and Legal Basis for Processing Personal Data
+We process your personal data only within the limits permitted by law. The processing usually occurs in the following situations:
+
+Processing is necessary for the performance of a contract to which you are a party or in order to take steps to enter into a contract, pursuant to Article 6(​‌1)(b) GDPR.
+Processing is necessary for compliance with a legal obligation under Article 6(‌1)(c) GDPR or for the establishment, exercise, or defense of legal claims under Article 9(‌2)(f) GDPR.
+You have given your consent to the processing of personal data under Article 6(‌1)(a) or 9(‌2)(a) GDPR.
+Processing is necessary for the purposes of the legitimate interests pursued by us or a third party, except where such interests are overridden by your interests, fundamental rights, or freedoms, pursuant to Article 6(‌1)(f) GDPR.
+We may process data regarding your personal identity number in accordance with Section 29 of the Finnish Data Protection Act or when there is a legal basis specified in points (i), (iii), and (iv). Disclosure of this identifier occurs only when necessary for unambiguous identification or when required by authorities.
+The table below outlines the purposes for which we process personal data, the types of data, and the legal basis for processing, including the justification for our legitimate interest where applicable.
+
+Purpose/Activity
+
+Type of Data
+
+Legal Basis, including justification for legitimate interest
+
+Entering into and managing contracts with you, including:
+
+Registering new customers.
+Purchasing or booking our services: buying or renting/selling timeshares, hotel accommodation, rentals, participating in sales presentations, or using other services (e.g., spa, wellness, activity, or restaurant services).
+Managing and collecting payments for products and services.
+The provision of customer benefits and customer service, including but not limited to administrative complaints and call recording (switchboard, customer service, property management, service center, hotels) as well as digital services.
+Information related to key card use, including timestamps and access logs.
+General compliance with obligations and exercising our rights based on contracts.
+(A) Identification Data
+
+(B) Contact Data
+
+(D) Call Data
+
+(H) Transaction Data
+
+(N) Credit Data
+
+(O) Key Card Data
+
+Performance of a contract with you or taking pre-contractual steps at your request. Ensures provision of contracted services and records ownership of timeshares.
+
+Compliance with legal obligations (accounting, auditing, taxation).
+
+Call recordings are used for improving customer service, staff training, and verifying contractual content. The calls are not used for any other purposes.
+
+In connection with hotel bookings and the provision of other services, parental consent may also be requested for a service offered to a minor, if needed for any reason, and in this context, information about the minor may be collected separately. However, this information is not used for any purpose other than verifying the consent.
+
+Maintaining the shareholder register as property manager on behalf of real estate companies (sending notices, invitations to general meetings, etc.)
+
+We act as data processors; the real estate companies act as data controllers.
+
+(A) Identification Data
+
+(B) Contact Data
+
+(C) Shareholder Data
+
+Based on property management agreements. The legal basis for the data controller (real estate company) is compliance with a statutory obligation.
+
+Collecting shareholder data to maintain the customer relationship between Holiday Club and the shareholder
+
+(A) Identification Data
+
+(B) Contact Data
+
+(D) Additional Shareholder Data
+
+Legitimate interest in maintaining customer relationships with shareholders.
+
+Collecting guest data for accommodation registration (legal obligation)
+
+(A) Identification Data
+
+(B) Contact Data
+
+(G) Traveler Data
+
+Legal obligation.
+
+The information is collected at the time of booking or through a travel agent and the organizer. When the information is collected through these parties, they also act as independent data controllers with respect to your personal data.
+
+Analyzing and improving business processes and practices
+
+(A) Identification Data
+
+(B) Contact Data
+
+(H) Transaction Data
+
+(I) Profile Data
+
+Necessary based on our legitimate interest to analyze and develop our business, including our products and services.
+
+Providing access to the website
+
+(J) Technical Data
+
+We have a legitimate interest in providing website access.
+
+Providing customer service, competitions, and sweepstakes
+
+(A) Identification Data
+
+(B) Contact Data
+
+(I) Profile Data
+
+(L) Marketing & Communication Data
+
+Legitimate interest in communicating and enabling participation in competitions.
+
+Sending newsletters and marketing; maintaining opt-out register
+
+(A) Identification Data
+
+(B) Contact Data
+
+(I) Profile Data
+
+(L) Marketing & Communication Data
+
+We have a legitimate interest in sending you relevant marketing.
+
+We send you marketing via email or other relevant electronic communication channels if you have given us consent to do so or if we are otherwise entitled to it under the Act on Electronic Communications Services. We may also send you marketing materials by post without prior consent.
+
+We maintain a register of customers who have opted out of marketing. This register is necessary to ensure that the customer is not added back to marketing lists.
+
+The management and protection of our business and website (including troubleshooting, data analysis, testing, and system maintenance).
+
+(A) Identification Data
+
+(B) Contact Data
+
+(J) Technical Data
+
+(K) Usage Data
+
+Necessary for legitimate interests: operational continuity, administration, IT services, cybersecurity, and fraud prevention.
+
+Using data analytics to improve website, products/services, marketing, customer relations, and experiences
+
+(J) Technical Data
+
+(K) Usage Data
+
+The processing is necessary for our legitimate interests to identify customer types for our products and services, keep our website up to date and relevant, develop our business, and improve our marketing strategy.
+
+We use cookies—other than strictly necessary technical cookies—only if you have given your consent.
+
+Providing relevant and targeted marketing, advertisements, and website content on our and third-party sites, as well as measuring the effectiveness of advertising.
+
+(A) Identification Data
+
+(B) Contact Data
+
+(I) Profile Data
+
+(J) Technical Data
+
+(K) Usage Data
+
+(L) Marketing & Communication Data
+
+We have a legitimate interest in determining our marketing strategy and targeting our marketing to suit your preferences.
+
+We use cookies other than strictly necessary ones only if you have given your consent.
+
+Maintenance of accommodations and handling fault reports
+
+(A) Identification Data
+
+(B) Contact Data
+
+(D) Additional Shareholder Data
+
+(E) Call Data
+
+(G) Traveler Data
+
+Legitimate interest in receiving and resolving fault reports.
+
+CCTV surveillance
+
+(M) CCTV Data (Image and Behaviour)
+
+We have a legitimate interest in processing CCTV data to ensure the safety of employees and customers and to prevent crimes. CCTV monitoring is indicated with signage in the areas and premises where cameras are installed.
+
+When processing is based on our legitimate interest, a balancing test has been performed to ensure your rights or freedoms are not overridden. For more information, contact us at tietosuoja@holidayclub.fi.
+
+4. Sharing of Collected Data
+We may share your data within the Holiday Club Resorts Group when necessary to fulfill the purposes described above. This processing is based on our legitimate interest in transferring data within the Group for internal purposes. Such internal purposes include, for example, using a centralized IT system, aligning business operations and strategies, and improving and developing services and products. We do not share health data within the Group, except when another Group entity processes data on our behalf for the purposes specified in section 3.
+
+We may share your data with third parties in the following situations:
+
+When you make a payment on our website, the payment is handled by a payment service provider, acting as an independent data controller.
+When it is necessary for the purposes listed in section 3. Additionally, hotel guests’ booking information may be stored in third-party systems.
+Cookies may be set on our website, and data may be collected or transferred to third parties. Please review our website’s cookie notice and cookie settings for information on these third parties and the purposes for which data is collected. Non-essential cookies are used only if you have given your consent.
+Your data may be shared with a person or entity acquiring all or most of our company, shares, or assets, or with whom we are merging.
+Travel data of foreign guests is provided to the local police authority in accordance with Section 8 of the Act on Accommodation and Catering Services. Travel data of Finnish guests may also be disclosed as required for official duties.
+We may also collect your data when we reasonably believe that disclosure is necessary to exercise our rights, defend legal claims, ensure your or others’ safety, investigate fraud, or respond to a request from public authorities.
+
+We share data, including personal data, with trusted third-party service providers. These providers perform services on our behalf and process personal data according to our instructions. Such services include IT system providers, customer relationship management services, cleaning services, sales and security services, debt collection agencies, postal services, marketing services, additional service providers, and similar partners. Third-party providers may access or process personal data only to provide these services and may not use your data for other purposes. We have concluded data processing agreements with these third parties. Data may also be disclosed to authorities or companies (e.g., postal services) for updating or completing information.
+
+5. Transfers of Personal Data to Third Countries
+We do not transfer your data to countries outside the European Union or European Economic Area unless we have ensured that such transfers comply with the requirements of Chapter V of the General Data Protection Regulation (GDPR).
+
+To ensure adequate protection for your personal data, we have implemented appropriate safeguards for secure transfers in these situations. Such safeguards include, for example, the Standard Contractual Clauses approved separately by the European Commission. These measures are considered to provide the same level of protection for your data as within the European Economic Area. Please note that we are not acting as the data controller for personal data in the RCI timeshare exchange system, nor do we process personal data on their behalf.
+
+If you would like more information about processors located outside the European Economic Area and the security measures we have implemented to ensure continued safe transfers, you may contact us by email at tietosuoja@holidayclub.fi.
+
+6. Retention Periods
+We retain the personal data we collect for as long as we have a continuing legal basis for processing it. When the legal basis for processing ends, we delete or anonymize your personal data.
+
+We remove marketing-related data from our records after you have withdrawn your consent to marketing or opted out of postal marketing. If we become aware that an email in our marketing register is no longer functional, we will delete the data without undue delay, but at the latest within one (‌1) year from the time we became aware of it.
+
+Customer data in hotel and other service registers are retained for a maximum of five (5) years from the date the customer last purchased services. Travel declarations and travel data are deleted one (‌1) year after the data is recorded in accordance with the Act on Accommodation and Catering Services.
+
+Shareholder data is retained for as long as the person owns the share. Additionally, data of former owners is retained for a maximum of ten (‌10) years from the date a new owner is registered in the shareholder register.
+
+Customer feedback containing personal data is processed until the feedback has been addressed. Feedback is deleted after we have taken necessary measures based on it and allowed you a reasonable time to respond to any related inquiries.
+
+Potential customer receivables are retained as long as the receivable is outstanding and enforceable. Identifying information, contact details, and transaction data are retained for six (‌6) years from the end of the year in which the transaction was last conducted, for the purpose of demonstrating existing contracts, accounting, and taxation.
+
+If your data is retained based on a contract, it is retained for the duration specified in the contract.
+
+Technical and usage data, such as login information and content click data, are retained for three (‌3) years from the date of collection. Customer service call recordings are retained for seven (‌7) months from the date of collection.
+
+If video surveillance data is subject to an investigation, it will be used for the duration of the investigation. After the investigation concludes, the data will be retained only as long as necessary to establish, exercise, or defend legal claims. When the retention need ends, the data is deleted. Otherwise, data is regularly destroyed and retained only for the maximum period permitted by law.
+
+Data may also be retained for longer periods if we have a legal obligation to do so, or if retention is necessary for establishing, exercising, or defending legal claims in legal proceedings.
+
+7. How You Can Exercise Your Data Protection Rights
+You have several rights regarding your personal data. Below is a summary of these rights, how you can exercise them, and any applicable limitations.
+
+Under certain conditions, you have the right to:
+
+Request access to your personal data. This right allows you to obtain a copy of all personal data we hold about you and to ensure that we are processing this data lawfully.
+Request correction of your personal data. This right allows you to ask us to correct information about you that is incomplete or inaccurate. By law, however, we cannot delete entries in your medical records.
+Request deletion of your data. This right allows you to request that we delete or stop processing personal data when there is no longer a lawful basis for the processing.
+Object to the processing of your data when the processing is based on our (or a third party’s) legitimate interest and you have a specific reason related to your personal situation to object. You also have the right to object at any time to the processing of your data for direct marketing purposes.
+Request restriction of processing. This right allows you to ask us to temporarily stop processing your data, for example while verifying the accuracy of the data or the legal basis for processing.
+Request the transfer of your data from one system to another.
+If processing is based solely on your consent, you have the right to withdraw your consent at any time. Withdrawing consent does not affect the lawfulness of processing carried out before the withdrawal.
+If you wish to exercise any of the above rights, you may contact us by email at tietosuoja@holidayclub.fi. After receiving your request, we will comply to the extent permitted by law.
+
+You also have the right to lodge a complaint with your national data protection authority if you are dissatisfied with how we process your personal data. In Finland, complaints can be submitted to the Office of the Data Protection Ombudsman at https://tietosuoja.fi/ilmoitus-tietosuojavaltuutetulle.
+
+If you are located in the United Kingdom and have questions about your personal data or would like to request to access, update or delete it, you may contact our representative at:
+
+Bird & Bird GDPR Representative Services UK
+12 New Fetter Lane
+London
+EC4A 1JP
+United Kingdom
+UKrepresentative.Holidayclub@twobirds.com
+
+8. Changes to the Privacy Notice
+This privacy notice may be updated as necessary to reflect changing legal and operational requirements. We recommend that you visit our website regularly to stay informed about any updates to our privacy practices.
+
+If significant changes are made to this privacy notice, registered customers will be notified of the changes by email before they take effect.
+
+9. Description of Technical and Organizational Security Measures
+To ensure adequate protection for your personal data, we have implemented technical and organizational safeguards to secure the processing of your data. Such safeguards include, for example, ensuring that your personal data can only be accessed by authorized employees, professionals, or partners using their personal user IDs and passwords. Access rights are tiered, and each user is granted only the level of access necessary to perform their tasks.
+
+Employees are trained and instructed to consider data security when processing personal data. Personal data is stored only on secure devices. The data controller’s IT devices are equipped with appropriate antivirus and firewall software, configured to automatically download and install software updates. Personal data is also stored on encrypted cloud servers.
+
